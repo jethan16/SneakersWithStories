@@ -1,0 +1,144 @@
+/* .search-show {
+    height: 70vh;
+    border-top: solid black 1px;
+    transform: translate(0);
+    transition: 0.175s ease-out;
+  }
+
+  .search-hide {
+    height: 70vh;
+    border-top: solid black 1px;
+    transform: translate(-200%);
+    transition: 0.175s ease-in;
+  }
+
+  .squares {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0 100px;
+  }
+
+  .squares-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .left-box {
+    width: 100%;
+    background-image: url(../../images/snkrs.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-box {
+    width: 100%;
+    border-left: solid 1px black;
+  }
+
+  .five {
+    border-bottom: solid 1px black;
+  } */
+
+@media only screen and (min-width: 768px) {
+  .search-show {
+    height: 70vh;
+    border-top: solid black 1px;
+    transform: translate(0);
+    transition: 0.175s ease-out;
+  }
+
+  .search-window {
+    position: absolute;
+    top: 65px;
+    width: 100vw;
+}
+
+
+  .search-hide {
+    height: 70vh;
+    border-top: solid black 1px;
+    transform: translate(-200%);
+    transition: 0.175s ease-in;
+  }
+
+  .search-title {
+    color: black;
+    /* -webkit-text-stroke-width:1px ;
+      -webkit-text-stroke-color:black ; */
+  }
+
+  .search-field {
+    width: 75%;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 100px;
+    outline: none;
+    border: none;
+    border-bottom: solid black 1px;
+  }
+
+  .squares {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0 100px;
+  }
+
+  .squares-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .left-box {
+    width: 100%;
+    background-image: url(../../images/snkrs.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-box {
+    width: 100%;
+    border-left: solid 1px black;
+  }
+
+  /* .example {
+      display: flex;
+      width: 33.33%;
+      border: solid 1px black;
+  } */
+
+  .one {
+    width: 33.33%;
+    background-image: url(../../images/panthers.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .two {
+    width: 33.33%;
+    background-image: url(../../images/cancer.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .three {
+    width: 33.33%;
+    background-image: url(../../images/rangers.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .five {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px black;
+    padding: 20px 35px;
+  }
+
+  .six {
+      display: flex;
+
+  }
+}
