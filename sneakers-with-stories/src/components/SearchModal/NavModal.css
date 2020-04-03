@@ -85,6 +85,7 @@
     height: 100%;
     flex-wrap: wrap;
     padding: 0 100px;
+    background-color: white;
   }
 
   .squares-container {

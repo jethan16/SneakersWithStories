@@ -1,0 +1,14 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid black 5px; */
+  }
+
+.wrapper > * {
+    color: black;
+    font-size: 100px;
+}
