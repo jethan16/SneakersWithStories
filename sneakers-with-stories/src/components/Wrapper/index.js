@@ -1,8 +1,9 @@
 import React from 'react'
+import "./wrapper.css"
 
-function Wrapper() {
+function Wrapper(props) {
     return (
-        <div></div>
+        <div className="wrapper" {...props}></div>
     )
 }
 

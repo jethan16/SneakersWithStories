@@ -2,7 +2,7 @@ import React from 'react'
 
 function Shoes() {
     return (
-        <div></div>
+        <div>Shoes Page!</div>
     )
 }
 
