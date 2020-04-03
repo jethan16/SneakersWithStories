@@ -1,0 +1,43 @@
+body {
+    padding: 1vw 10vh;
+    height: 2000px;
+}
+
+div .column {
+    border-right: 1px lightgray solid;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    /* border: solid 1px lightgray; */
+}
+
+
+.justify-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-has-margin-sides > * {
+    margin: auto 25px;
+}
+
+/* .nav-bar {
+    position: fixed;
+    margin: 0 auto;
+    width: 85vw;
+    top: auto;
+} */
+
+.is-drop-down {
+    display: none;
+}
+
+
+
+

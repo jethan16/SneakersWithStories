@@ -1,0 +1,103 @@
+/* .logo {
+    display: flex;
+    align-items: center;
+}
+
+.columns {
+    margin-bottom: 0px !important;
+}
+
+.nav-bar {
+    margin: 5px 20px;
+    height: 65px;
+}
+
+.nav-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-title:hover {
+    background-color: black;
+}
+
+.nav-title:hover > h1 {
+    color: white;
+}
+
+.justify-left {
+    display: flex;
+}
+
+.content-has-margin-sides > * {
+    margin: auto 25px;
+}
+
+.has-margin-left {
+    margin-left: 50px;
+} */
+
+@media only screen and (min-width: 768px) {
+
+body {
+    height: 3000px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.columns {
+    margin-bottom: 0px !important;
+}
+
+.nav-bar {
+    width: 90vw;
+    margin: 0px 100px;
+    height: 65px;
+    position: fixed;
+    left:0;
+    z-index: 10;
+    background-color: white;
+    border-top: solid white 10px;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.nav-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    /* transition: .15s; */
+}
+
+.nav-title:hover {
+    background-color: black;
+}
+
+.nav-title:hover > h1 {
+    /* transition: .05s; */
+    color: white;
+}
+
+.justify-left {
+    display: flex;
+}
+
+.content-has-margin-sides > * {
+    margin: auto 25px;
+}
+
+.has-margin-left {
+    margin-left: 50px;
+}
+
+}
+
+
