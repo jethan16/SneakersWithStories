@@ -1,0 +1,26 @@
+.lower {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 75px;
+    margin-bottom: 1vh;
+    border: solid 2px black;
+}
+
+footer h1 {
+    /* margin: 0 auto; */
+    height: 25px;
+}
+
+.network-container {
+    width: 3vw;
+    height: 5vh;
+    margin: 0 auto;
+    align-self: center;
+    background-image: url(../../images/icons/icon-ig.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,47 @@
+.story-splash {
+    width: 100%;
+    height: 75vh;
+    background-color: #77c043;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* position: relative; */
+    align-self: flex-start;
+  }
+
+.story-splash img {
+      width: 50%;
+}
+
+.pull-quote {
+    display: flex;
+    text-align: end;
+}
+
+.pull-quote img {
+    width: 35%;
+}
+
+.pull-quote h1 {
+    font-size: 75px;
+    line-height: .9em;
+}
+
+.story-splash-content {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.shoe-highlights {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    width: 50%;
+}
+
+.shoe-highlights h5 {
+    font-size: 30px;
+}

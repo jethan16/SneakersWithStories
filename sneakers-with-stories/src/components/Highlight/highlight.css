@@ -1,0 +1,26 @@
+.middle {
+    height: 55vh;
+    position: relative;
+    top: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #3da2fc;
+    background-color: #3081c8;
+    background: url(../../images/shoes/2_Panthers/Panthers_1.jpg) center left no-repeat, url(../../images/shoes/2_Panthers/Panthers_4.jpg) right center no-repeat;
+    background-size: 850px, 850px;
+}
+
+.middle-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.185);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    padding-top: 25px;
+    margin: 50px auto;
+    width: 34%;
+    font-size: 110px;
+    line-height: .85em;
+}
+
+
+
