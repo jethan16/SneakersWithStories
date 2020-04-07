@@ -4,7 +4,6 @@ import iconX from "../../images/icons/icon-X.png";
 import "../search/Search.css";
 
 function Search(props) {
-  console.log('from Search',props);
 
   const [searchContent, setSearchContent] = useState({
     search: iconSearch,
@@ -18,7 +17,6 @@ function Search(props) {
       setSearchContent({ icon: iconSearch, search: "search" });
     }
   }, [props.currentPopState]);
-  // console.log('search',searchContent.icon)
 
   return (
     <div

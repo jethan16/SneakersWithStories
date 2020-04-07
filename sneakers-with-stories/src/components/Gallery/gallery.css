@@ -1,54 +1,37 @@
-.gallery-container {
-  width: 100%;
-  /* height: 350px; */
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-  /* transform: rotate(90deg); */
+.carousel {
+  margin: 7px;
 }
 
-.gallery-box {
-  margin: 5px;
-}
-.image1 {
-  height: 350px;
-  background-image: url(../../images/shoes/3_Fortnite/Fortnite_4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.carousel div {
+  margin: 7px;
 }
 
-.image2 {
-  height: 350px;
-  background-image: url(../../images/shoes/2_Panthers/Panthers_2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    margin: 7px 37px;
+  }
+
+  .carousel div {
+    margin: 7px;
+  }
+
+  .gallery-img {
+    width: 350px;
+  }
 }
-/* .gal-box-two {
-  height: 350px;
-  background-image: url(../../images/shoes/3_Fortnite/Fortnite_4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-.gallery-box-three {display: none}
-
-
 
 @media only screen and (min-width: 1408px) {
-  .gallery-container {
-    display: flex;
-    justify-content: space-between;
-    width: 91.6vw;
-    position: relative;
-    top: 22px;
+  .carousel {
+    margin: 7px 70px;
   }
 
-  .gallery-box {
-    width: 24%;
+  .carousel div {
+    margin: 7px;
   }
 
-  .gallery-image:hover {
-    box-shadow: inset 10px 10px 10px #000000;
+  .gallery-img {
+    width: 100%;
+    /* width: 525px; */
   }
 }

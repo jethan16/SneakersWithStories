@@ -7,9 +7,7 @@ import Modal from "../SearchModal";
 import logoKO from "../../images/logos/SwS_Mark.png"
 
 function Navbar(props) {
-  console.log(props.changePopState, props.currentPopState)
   useEffect(() => {
-    console.log(props.popState);
   }, [props.popState]);
 
   return (
