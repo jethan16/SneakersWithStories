@@ -1,0 +1,37 @@
+.carousel {
+  margin: 7px;
+}
+
+.carousel div {
+  margin: 7px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    margin: 7px 37px;
+  }
+
+  .carousel div {
+    margin: 7px;
+  }
+
+  .gallery-img {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  .carousel {
+    margin: 7px 70px;
+  }
+
+  .carousel div {
+    margin: 7px;
+  }
+
+  .gallery-img {
+    width: 100%;
+    /* width: 525px; */
+  }
+}
