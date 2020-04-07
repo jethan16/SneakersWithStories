@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import StoriesWrapper from "../../components/StoriesWrapper";
+import StoryBody from "../../components/StoryBody";
+import Forms from "../forms";
+import "./stories.css";
 
 function Home() {
-    return (
-        <div>Stories Page!</div>
-    )
+  return (
+    <StoriesWrapper>
+      <div className="stories-header"></div>
+      <StoryBody />
+      <Forms />
+    </StoriesWrapper>
+  );
 }
 
 export default Home;

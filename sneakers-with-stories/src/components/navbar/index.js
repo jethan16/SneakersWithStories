@@ -4,45 +4,37 @@ import "./Navbar.css";
 import Search from "../search";
 import Modal from "../SearchModal";
 
-function Navbar() {
-  const [popState, setPopState] = useState(false);
+import logoKO from "../../images/logos/SwS_Mark.png"
 
-  const changePopState = () => {
-    // console.log('before', popState)
-    setPopState(!popState);
-    // console.log('after',popState)
-  };
-
+function Navbar(props) {
   useEffect(() => {
-    console.log(popState);
-  }, [popState]);
+  }, [props.popState]);
 
   return (
     <div>
-      <div className="columns nav-bar">
+      <div className={`columns nav-bar ${props.currentBarState === false ? 'nav-mobile-hide' : ''}`}>
         <Link className="logo" to="/">
-          <h1>SWS</h1>
+          <img src={logoKO} />
         </Link>
         <div className="column justify-left has-margin-left is-paddingless">
-          <Link className="nav-title" to="/stories">
-            <h1 className="title is-6">Hear The Stories</h1>
+          <Link className="" to="/stories">
+            <h1 className="nav-title">See The Stories</h1>
           </Link>
-          <Link className="nav-title" to="/shoes">
-            <h1 className="title is-6">See The Shoes</h1>
+          <Link className="" to="/vision">
+            <h1 className="nav-title">Hear The Vision</h1>
           </Link>
-          <Link className="nav-title" to="/vision">
-            <h1 className="title is-6">Catch The Vision</h1>
+          <Link className="" to="/shop">
+            <h1 className="nav-title">Get The Gear</h1>
           </Link>
-          <Link className="nav-title" to="/shop">
-            <h1 className="title is-6">Get The Gear</h1>
-          </Link>
-          <Link className="nav-title" to="/team">
-            <h1 className="title is-6">Meet The Team</h1>
+          <Link className="" to="/team">
+            <h1 className="nav-title">Meet The Team</h1>
           </Link>
         </div>
-        <Search changePopState={changePopState} currentPopState={popState} />
+        <Search changePopState={props.changePopState} currentPopState={props.currentPopState} />
       </div>
-      <Modal currentPopState={popState} />
+      <Modal 
+      currentPopState={props.currentPopState}
+       />
     </div>
   );
 }

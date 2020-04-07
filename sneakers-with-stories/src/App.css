@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,85 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+.bg-dim {
+  opacity: .3;
+  transition: .25s ease-in-out;
+}
+
+.bg-show {
+  opacity: 1;
+  transition: .15s;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+.banner img {
+  width: 50%;
+  margin: 15px;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+}
+
+.burger-bar {
+  position: relative;
+  top: 16px;
+  left: 50px;
+  width: 65%;
+  height: 2px;
+  background-color: black;
+  margin: 3px auto;
+  transition: 0.2s ease-in-out;
+}
+
+.bar-one {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.bar-two {
+  opacity: 0;
+  /* transform: translateX(-200px); */
+}
+
+.bar-three {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+@media only screen and (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+  }
+
+  .banner img {
+    width: 20%;
+    margin: 12px;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e5e5;
+  }
+
+  .banner img {
+    width: 15%;
+    margin: 10px;
   }
 }
