@@ -1,0 +1,21 @@
+.middle {
+    height: 45vh;
+    background-color: rgb(37, 37, 37);
+}
+
+.middle-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .middle {
+        width: 91.5%;
+        margin: 0 auto;
+        height: 45vh;
+    }
+}
+
+
+
