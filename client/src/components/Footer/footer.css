@@ -1,26 +1,77 @@
 .lower {
     width: 100%;
-    height: 25vh;
+    height: 11vh;
     position: relative;
     display: flex;
     justify-content: center;
-    top: 75px;
+    margin-top: 10px;
     margin-bottom: 1vh;
-    border: solid 2px black;
+    border-top: solid 1px rgba(156, 156, 156, 0.87);
+    border-bottom: solid 1px rgba(156, 156, 156, 0.87);
 }
 
 footer h1 {
-    /* margin: 0 auto; */
     height: 25px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
-.network-container {
-    width: 3vw;
-    height: 5vh;
-    margin: 0 auto;
-    align-self: center;
-    background-image: url(../../images/icons/icon-ig.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.footer-box {
+    width: 33.33%;
+    padding: 5px;
+    border-right: solid 1px rgba(156, 156, 156, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    font-size: 23px;
+    color: black;
+}
+
+.submit-story {
+    border-right: none;
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .lower {
+        height: 7vh;
+    }
+
+    .footer-box {
+        padding: 10px;
+    }
+    
+    footer h1 {
+        font-size: 25px;
+        /* margin: 25px; */
+    }
+
+    .footer-icon {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1216px) {
+    
+    .lower {
+        height: 9vh;
+    }
+
+    .footer-box {
+        padding: 10px;
+    }
+    
+    footer h1 {
+        font-size: 25px;
+        /* margin: 25px; */
+    }
+
+    .footer-icon {
+        font-size: 30px;
+    }
 }

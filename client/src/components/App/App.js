@@ -62,7 +62,7 @@ function App() {
         currentPopState={popState}
         changePopState={changePopState}
       />
-      <Wrapper className={popState === false || barState === false ? 'bg-show' : 'bg-dim'}>
+      <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
         <Route exact path="/" component={Home} />
         <Route exact path="/stories" component={Stories} />
         <Route exact path="/shop" component={Shop} />
