@@ -8,7 +8,9 @@ function Footer() {
     <footer className="lower">
       <div className="footer-box contact">
           <h1>Contact Us</h1>
+          <a href="/contact"> 
           <i className="footer-icon fas fa-bullhorn"></i>
+          </a>
       </div>
       <div className="footer-box connect">
         <h1>Keep In Touch</h1>
@@ -18,7 +20,9 @@ function Footer() {
       </div>
       <div className="footer-box submit-story">
           <h1>Tell Your Story</h1>
+          <a href="/userstory">
           <i class="footer-icon far fa-comments"></i>
+          </a>
       </div>
     </footer>
   );
