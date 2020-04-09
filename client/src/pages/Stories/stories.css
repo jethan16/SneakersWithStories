@@ -1,10 +1,159 @@
-.stories-header {
+.story-banner {
     width: 100%;
-    height: 25vh;
-    margin-bottom: 30px;
-    border: solid 2px black;
+    height: 3vh;
+    margin: 5px 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-overview {
+    display: flex;
+    border-bottom: 1px rgba(0, 0, 0, 0.644) solid;
+}
+
+.fa-quote-left, .fa-quote-right{
+    font-size: 45px;
+    color: rgb(175, 175, 175);
+}
+
+.fa-quote-right {
+    align-self: flex-end;
 }
 
 .pull-quote {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.stories-carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.story-splash {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+  }
+
+.shoe-specs {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px 0;
+    /* padding: 0 40px; */
+}
+
+.carousel-container {
+    width: 100%;
+}
+
+.story-splash img {
+      width: 100%;
+}
+
+.story-overview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-top: 1px rgba(0, 0, 0, 0.644) solid;
+    margin-top: 5px;
+}
+
+.pull-quote {
+    text-align: start;
+    line-height: .85em;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px rgba(0, 0, 0, 0.644) solid;
+    padding: 5px 0;
+}
+
+.gal-image {
+    width: 30%;
+    margin: 2px;
+    border: solid 1px black;
+}
+
+.gal-image img {
+    object-fit: cover;
+}
+
+.features h1 {
+    font-size: 20px;
+}
+
+.features li {
+    font-size: 15px;
+}
+
+.story-summary {
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 15px;
+}
+
+.button-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.story-button {
+    width: 32%;
+}
+
+.next-button {
+    float: right;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .carousel-container {
+        width: 50%;
+    }
+
+    .story-splash {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   
+    .shoe-specs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 5px 0;
+        margin-right: 65px;
+    }
+
+    .features {
+        margin-bottom: 15px;
+    }
+
+    .features h1 {
+        font-size: 35px;
+    }
+
+    .features li {
+        font-size: 20px;
+    }
+
+    .story-overview {
+        padding: 20px 45px;
+    }
+
+    .pull-quote {
+        align-self: center;
+    }
+ 
 }

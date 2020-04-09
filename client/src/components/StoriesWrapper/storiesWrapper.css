@@ -1,3 +1,16 @@
-.stories-wrapper {
-    padding: 65px;
+
+
+@media only screen and (min-width: 1024px) {
+  .stories-wrapper {
+    /* display: flex;
+    justify-content: center; */
+    padding: 0 65px;
+  }
+}
+
+
+@media only screen and (min-width: 1408px) {
+  .stories-wrapper {
+    padding: 0 65px;
+  }
 }

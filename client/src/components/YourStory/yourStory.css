@@ -1,0 +1,33 @@
+.middle {
+  height: 45vh;
+  margin: 0 auto;
+  display: flex;
+  background-image: url(../../images/splashes/Shoe_Lockup_01.png), url(../../images/splashes/TellUsYourStory_BG_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .middle-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+} */
+
+@media only screen and (min-width: 1024px) {
+  .middle {
+    width: 91.5%;
+    margin: 0 auto;
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  .middle {
+    height: 55vh;
+    background-image: url(../../images/splashes/Shoe_Lockup_01.png), url(../../images/splashes/TellUsYourStory_BG_01.jpg), url(../../images/splashes/TellUsYourStory_BG_02.png);
+    background-position: center;
+    background-size: 52%, contain, 100%;
+    background-repeat: no-repeat;
+  }
+}
