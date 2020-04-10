@@ -24,7 +24,7 @@ class Contact extends React.Component {
         return (
             <form className="k-form">
                 <fieldset>
-                    <h1 style={{ fontSize: '50px' }}>Enter First Name</h1>
+                    <h1>First Name</h1>
                     <input
                         name='firstName'
                         placeholder='Mary'
@@ -32,7 +32,7 @@ class Contact extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Last Name</h1>
+                    <h1>Last Name</h1>
                     <input
                         name='lastName'
                         placeholder='Poppins'
@@ -40,7 +40,7 @@ class Contact extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Valid Email</h1>
+                    <h1>Email</h1>
                     <input
                         name='email'
                         placeholder='Marypoppins@gmail.com'
@@ -48,7 +48,7 @@ class Contact extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Your Story</h1>
+                    <h1>Your Story</h1>
                     <textarea
                         name='story'
                         placeholder='Share your story'
