@@ -1,0 +1,41 @@
+.k-form{
+    text-align: center;
+    border: solid 1px black;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
+   
+
+}
+
+.save-btn{
+    /* width: 100vw; */
+  /* font-weight: bold; */
+  line-height: 1.3em;
+  padding: 0px 20px;
+  color: black;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+h1 {
+   color: black; 
+   font-weight: bolder;
+}
+input{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    border: none;
+    border-bottom:1px black solid;
+    width: 29%;
+}
+textarea{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    border: none;
+    border-bottom:1px black solid;
+    width: 29%;
+    /* margin-left: 60px; */
+}

@@ -9,6 +9,12 @@ import Stories from "../../pages/Stories";
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
 import Team from "../../pages/Team";
+<<<<<<< HEAD
+=======
+import Form from "../../components/storiesForm";
+import Contact from "../../components/contactForm";
+
+>>>>>>> 7440d99d1d08632f13f3dbd2bde24d2097d79962
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
@@ -86,7 +92,25 @@ function App() {
             <Route exact path="/team" component={Team} />
           </Wrapper>
         </div>
+<<<<<<< HEAD
       </AuthContext.Provider>
+=======
+      </div>
+      <Navbar
+        currentBarState={barState}
+        currentPopState={popState}
+        changePopState={changePopState}
+      />
+      <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/stories" component={Stories} />
+        <Route exact path="/shop" component={Shop} />
+        <Route exact path="/vision" component={Vision} />
+        <Route exact path="/team" component={Team} />
+        <Route exact path="/userstory" component={Contact} />
+        <Route exact path="/contact" component={Form} />
+      </Wrapper>
+>>>>>>> 7440d99d1d08632f13f3dbd2bde24d2097d79962
     </Router>
   );
 }
