@@ -41,16 +41,16 @@ function Gallery() {
     autoPlaySpeed={3500}
     className='carousel'>
       <div>
-        <img className='gallery-img' src={Fortnite} />
+        <img className='gallery-img' src='https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/1_Hornets/Hornets_4.jpg' />
       </div>
       <div>
-        <img className='gallery-img' src={BIA} />
+        <img className='gallery-img' src='https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/9_YTHX/YTHX_6.jpg' />
       </div>
       <div>
-        <img className='gallery-img' src={PinkRibbon} />
+        <img className='gallery-img' src='https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/6_Breast_Cancer_Shoes/BreastCancerAwareness_5.jpg' />
       </div>
       <div>
-        <img className='gallery-img' src={Rangers} />
+        <img className='gallery-img' src='https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/5_Rangers/Rangers_2.jpg' />
       </div>
     </Carousel>
   );

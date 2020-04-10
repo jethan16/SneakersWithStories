@@ -8,26 +8,39 @@ import Dean1 from "../../images/shoes/2_Panthers/gal-images/gal-image-1.png";
 import Dean2 from "../../images/shoes/2_Panthers/gal-images/gal-image-2.png";
 import Dean3 from "../../images/shoes/2_Panthers/gal-images/gal-image-3.png";
 import Dean4 from "../../images/shoes/2_Panthers/gal-images/gal-image-4.png";
-import Panthers_1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
-import Panthers_2 from "../../images/shoes/2_Panthers/Panthers_2.jpg";
-import Panthers_3 from "../../images/shoes/2_Panthers/Panthers_3.jpg";
-import Panthers_4 from "../../images/shoes/2_Panthers/Panthers_4.jpg";
-import Panthers_5 from "../../images/shoes/2_Panthers/Panthers_5.jpg";
+// import Panthers_1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
+// import Panthers_2 from "../../images/shoes/2_Panthers/Panthers_2.jpg";
+// import Panthers_3 from "../../images/shoes/2_Panthers/Panthers_3.jpg";
+// import Panthers_4 from "../../images/shoes/2_Panthers/Panthers_4.jpg";
+// import Panthers_5 from "../../images/shoes/2_Panthers/Panthers_5.jpg";
 import "./stories.css";
 
 let storage = [
   {
-    subject: `Dean Adcock`,
-    shoeImages: [Panthers_1, Panthers_2, Panthers_3, Panthers_4, Panthers_5],
-    galImages: [Dean1, Dean2, Dean3, Dean4],
-    pullQuote: "Dean was always the life of the party.",
+    subject: `Jonathan Adcock`,
+    shoeImages: [
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_1.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_2.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_3.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_4.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_5.jpg',
+    ],
+    galImages: [
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_1.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_2.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_3.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_4.jpg',
+      'https://sneakers-with-stories.s3.us-east-2.amazonaws.com/shoes/2_Panthers/Panthers_5.jpg',
+
+    ],
+    pullQuote: "Dean was always the life of the party",
     features: [
-      "Watermark signatures",
-      `Dean's signature`,
-      `Hand painted Panther's logo`,
+      "Dean's signature across heel tab",
+      `Design  mimics Panther's helmet`,
+      `Historical Panther's logos/numbers painted behind 'Keep Pounding'`,
     ],
     storySummary:
-      "Dean was the coolest guy around. Everyone loved him and he was the nicest person you could ever meet.",
+      "Dean was the coolest guy around. Everyone loved him and he was the nicest person you could ever meet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  ",
     shoeType: "Air Monarchs",
     theme: {
       bgColor: "#00a5ff",
@@ -36,7 +49,7 @@ let storage = [
   {
     subject: `Scott Brinkley`,
     shoeImages: [
-      Panthers_1,
+      // Panthers_1,
       "/images/shoes/2_Panthers/Panthers_2.jpg",
       "/images/shoes/2_Panthers/Panthers_3.jpg",
       "/images/shoes/2_Panthers/Panthers_4.jpg",
@@ -59,7 +72,7 @@ let storage = [
   {
     subject: `Tinley So-and-So`,
     shoeImages: [
-      Panthers_1,
+      // Panthers_1,
       "/images/shoes/2_Panthers/Panthers_2.jpg",
       "/images/shoes/2_Panthers/Panthers_3.jpg",
       "/images/shoes/2_Panthers/Panthers_4.jpg",
@@ -101,7 +114,6 @@ function Stories() {
   const currentStory = storage[storyIndex];
 
   const getNextStory = () => {
-    // console.log(storage.length - 1);
     if (storyIndex === storage.length - 1) {
       setStoryIndex(0);
       return console.log("start over!");
@@ -118,18 +130,12 @@ function Stories() {
     setStoryIndex(storyIndex - 1);
   };
 
-  // console.log(currentStory);
-
   return (
     <StoriesWrapper>
-        <div className="story-banner">{currentStory.subject}</div>
+      <div className="story-banner">{currentStory.subject}</div>
       <section className="story-splash">
         <div className="carousel-container">
-          <Carousel
-            responsive={responsive}
-            infinite={true}
-            className="stories-carousel"
-          >
+          <Carousel responsive={responsive} infinite={true}>
             {currentStory.shoeImages.map((image) => (
               <div>
                 <img className="story-img" src={image} />
@@ -137,6 +143,16 @@ function Stories() {
             ))}
           </Carousel>
         </div>
+        <div className="story-overview">
+          <i class="fas fa-quote-left"></i>
+          <h1 className="pull-quote">{currentStory.pullQuote}</h1>
+          <i class="fas fa-quote-right"></i>
+          <div className="story-summary">
+            <p>{currentStory.storySummary}</p>
+          </div>
+        </div>
+      </section>
+      <div className="stories-middle">
         <div className="shoe-specs">
           <ul className="features">
             <h1>Highlights:</h1>
@@ -144,43 +160,32 @@ function Stories() {
               <li>{feature}</li>
             ))}
           </ul>
-          <ul className="features">
-            <h1>Shoe:</h1>
-            <li>{currentStory.shoeType}</li>
+          <ul className="specs-title">
+            <h1>The Shoes</h1>
+            <li>silhouette: {currentStory.shoeType}</li>
           </ul>
         </div>
-        </section>
-
-        <div className="story-overview">
-          <i class="fas fa-quote-left"></i>
-          <h1 className="pull-quote">{currentStory.pullQuote}</h1>
-          <i class="fas fa-quote-right"></i>
-        </div>
         <div className="gallery-container">
-          {currentStory.galImages.map((image) => (
-            <div className="gal-image">
-              <img src={image}></img>
-            </div>
+          {currentStory.shoeImages.map((image) => (
+              <img className="gal-image" src={image}></img>
           ))}
         </div>
-        <div className="story-summary">
-          <p>{currentStory.storySummary}</p>
-        </div>
-        <div className='button-bar'>
-          <h1
-            className="button is-radiusless story-button"
-            onClick={getLastStory}
-          >
-            Previous
-          </h1>
-          <h1
-            className="button is-radiusless story-button next-button"
-            onClick={getNextStory}
-          >
-            Next
-          </h1>
-        </div>
-        <Footer />
+      </div>
+      <div className="button-bar">
+        <h1
+          className="button is-radiusless story-button"
+          onClick={getLastStory}
+        >
+          Previous
+        </h1>
+        <h1
+          className="button is-radiusless story-button next-button"
+          onClick={getNextStory}
+        >
+          Next
+        </h1>
+      </div>
+      <Footer />
     </StoriesWrapper>
   );
 }
