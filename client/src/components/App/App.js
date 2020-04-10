@@ -68,15 +68,28 @@ function App() {
   return (
     <AuthContext.Provider value={authState}>
       <Router>
-        <div className="banner">
-          <Link className='banner-link' to="/">
+      
+        <div className="App">
+          <div className="banner">
             <img src={snkrsBanner} />
-          </Link>
-          <div className="burger" onClick={menuOpen}>
-            <div className="burger-bar" id="1"></div>
-            <div className="burger-bar" id="2"></div>
-            <div className="burger-bar" id="3"></div>
+            <div className="burger" onClick={menuOpen}>
+              <div className="burger-bar" id="1"></div>
+              <div className="burger-bar" id="2"></div>
+              <div className="burger-bar" id="3"></div>
+            </div>
           </div>
+          <Navbar
+            currentBarState={barState}
+            currentPopState={popState}
+            changePopState={changePopState}
+          />
+          <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/stories" component={Stories} />
+            <Route exact path="/shop" component={Shop} />
+            <Route exact path="/vision" component={Vision} />
+            <Route exact path="/team" component={Team} />
+          </Wrapper>
         </div>
         <Navbar
           currentBarState={barState}
@@ -94,7 +107,7 @@ function App() {
           <Route exact path="/vision" component={Vision} />
           <Route exact path="/team" component={Team} />
           <Route exact path="/userstory" component={Contact} />
-        <Route exact path="/contact" component={Form} />
+          <Route exact path="/contact" component={Form} />
         </Wrapper>
       </Router>
     </AuthContext.Provider>
