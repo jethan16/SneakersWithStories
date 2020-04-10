@@ -9,6 +9,8 @@ import Stories from "../../pages/Stories";
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
 import Team from "../../pages/Team";
+import Form from "../../components/storiesForm";
+import Contact from "../../components/contactForm";
 
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 
@@ -68,6 +70,8 @@ function App() {
         <Route exact path="/shop" component={Shop} />
         <Route exact path="/vision" component={Vision} />
         <Route exact path="/team" component={Team} />
+        <Route exact path="/userstory" component={Contact} />
+        <Route exact path="/contact" component={Form} />
       </Wrapper>
     </Router>
   );
