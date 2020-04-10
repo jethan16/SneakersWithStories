@@ -1,26 +1,32 @@
 .k-form{
     text-align: center;
-    border: solid 1px black;
+    /* display: flex;
+    justify-content: center; */
+    /* border: solid 1px black; */
     width: 90%;
     margin: 0px auto;
     margin-top: 10px;
-   
-
 }
 
 .save-btn{
     /* width: 100vw; */
   /* font-weight: bold; */
+  background-color: black;
   line-height: 1.3em;
   padding: 0px 20px;
-  color: black;
+  color: white;
   font-size: 40px;
   margin-top: 15px;
   margin-bottom: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.save-btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.45), 0 17px 50px 0 rgba(0,0,0,0.45)
 }
 h1 {
    color: black; 
-   font-weight: bolder;
+   font-weight: bold;
+   font-size: 50px;
 }
 input{
     margin-bottom: 50px;
@@ -38,4 +44,103 @@ textarea{
     border-bottom:1px black solid;
     width: 29%;
     /* margin-left: 60px; */
+}
+@media  only screen and (max-width: 375px) {
+   fieldset h1 {
+        font-size: 30px; 
+        font-weight: bold;
+    }
+    fieldset input{
+        width: 77.5%;
+        font-size: 15px
+    }
+    fieldset textarea{
+        width: 77.5%;
+        font-size: 15px  
+    }
+    .save-btn{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 425px) {
+    fieldset h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    fieldset input{
+        width: 77.5%;
+        font-size: 15px
+    }
+    fieldset textarea{
+        width: 77.5%;
+        font-size: 15px  
+    }
+    .save-btn{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    fieldset h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    fieldset input{
+        width: 50.5%;
+        font-size: 15px
+    }
+    fieldset textarea{
+        width: 50.5%;
+        font-size: 15px  
+    }
+    .save-btn{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    fieldset h1 {
+        font-size: 45px;
+    }
+    fieldset input{
+        width: 42%;
+        font-size: 15px
+    }
+    fieldset textarea{
+        width: 42%;
+        font-size: 15px  
+    }
+    .save-btn{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    fieldset h1 {
+        font-size: 50px;
+    }
+    fieldset input{
+        width: 33%;
+        font-size: 20px
+    }
+    fieldset textarea{
+        width: 33%;
+        font-size: 20px  
+    }
+    .save-btn{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    fieldset h1 {
+        font-size: 70px;
+    }
+    fieldset input{
+        width: 25%;
+        font-size: 20px
+    }
+    fieldset textarea{
+        width: 25%;
+        font-size: 20px  
+    }
+    .save-btn{
+        font-size: 65px;
+    }
 }
