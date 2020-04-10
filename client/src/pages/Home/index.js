@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/Hero"
-import Process from "../../components/Process"
+import Story from "../../components/YourStory"
 import Footer from "../../components/Footer"
 import "../Home/home.css"
 import Gallery from "../../components/Gallery"
@@ -10,7 +10,7 @@ function Home() {
     <div>
       <Hero />
       <Gallery />
-      <Process />
+      <Story />
       <Footer />
     </div>
   );

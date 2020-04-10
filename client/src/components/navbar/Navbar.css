@@ -46,6 +46,8 @@
   .logo {
     display: flex;
     align-items: center;
+    /* width: 10%; */
+    /* width: 45%; */
   }
 
   .columns {
@@ -53,10 +55,10 @@
   }
   
   .nav-title {
-    width: 11vw;
+    width: 15vw;
     text-align: center;
     margin-right: 0;
-    font-size: 12px;
+    font-size: 15px;
     color: black;
     padding: 0 8.45px;
     font-weight: bold;
@@ -66,7 +68,7 @@
   .nav-bar {
     position: static;
     width: 91.6vw;
-    height: 58px;
+    height: 50px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
@@ -78,7 +80,7 @@
   }
 
   .logo {
-    width: 4.5%;
+    width: 5%;
   }
 
   .logo img {

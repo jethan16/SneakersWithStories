@@ -5,6 +5,9 @@ import AuthContext from '../../contexts/AuthContext';
 import Wrapper from "../Wrapper";
 import Navbar from "../navbar";
 import Home from "../../pages/Home";
+import Login from "../../pages/Login/Login";
+import Secret from "../../pages/Secret/Secret";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Stories from "../../pages/Stories";
 import API from '../../lib/API';
 import Shop from "../../pages/Shop";
@@ -68,7 +71,6 @@ function App() {
   return (
     <AuthContext.Provider value={authState}>
       <Router>
-      
         <div className="App">
           <div className="banner">
             <img src={snkrsBanner} />
@@ -89,26 +91,10 @@ function App() {
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/vision" component={Vision} />
             <Route exact path="/team" component={Team} />
+            <Route path='/login' component={Login} />
+            <PrivateRoute path='/secret' component={Secret} />
           </Wrapper>
         </div>
-        <Navbar
-          currentBarState={barState}
-          currentPopState={popState}
-          changePopState={changePopState}
-        />
-        <Wrapper
-          className={
-            popState === true || barState === true ? "bg-dim" : "bg-show"
-          }
-        >
-          <Route exact path="/" component={Home} />
-          <Route exact path="/stories" component={Stories} />
-          <Route exact path="/shop" component={Shop} />
-          <Route exact path="/vision" component={Vision} />
-          <Route exact path="/team" component={Team} />
-          <Route exact path="/userstory" component={Contact} />
-          <Route exact path="/contact" component={Form} />
-        </Wrapper>
       </Router>
     </AuthContext.Provider>
   );

@@ -26,9 +26,6 @@ function Navbar(props) {
           <Link className="" to="/shop">
             <h1 className="nav-title">Get The Gear</h1>
           </Link>
-          <Link className="" to="/team">
-            <h1 className="nav-title">Meet The Team</h1>
-          </Link>
         </div>
         <Search changePopState={props.changePopState} currentPopState={props.currentPopState} />
       </div>
