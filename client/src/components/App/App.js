@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
+
+import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import TokenStore from '../../lib/TokenStore';
-import AuthContext from '../../contexts/AuthContext';
+import API from "../../lib/API.js";
+import TokenStore from "../../lib/TokenStore";
+import AuthContext from "../../contexts/AuthContext";
+
 import Wrapper from "../Wrapper";
 import Navbar from "../navbar";
 import Home from "../../pages/Home";
@@ -9,6 +13,7 @@ import Stories from "../../pages/Stories";
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
 import Team from "../../pages/Team";
+
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
 
@@ -22,7 +27,6 @@ function App() {
   };
   function menuOpen() {
     setBarState(!barState);
-    // const root = document.getElementById('root')
     const barOne = document.getElementById("1");
     const barTwo = document.getElementById("2");
     const barThree = document.getElementById("3");
@@ -30,7 +34,6 @@ function App() {
       barOne.classList.add("bar-one");
       barTwo.classList.add("bar-two");
       barThree.classList.add("bar-three");
-      // root.style.overflow = 'hidden';
     } else {
       barOne.classList.remove("bar-one");
       barTwo.classList.remove("bar-two");
@@ -49,6 +52,7 @@ function App() {
     authToken: TokenStore.getToken(),
     onLogin: (user, authToken) => {
       TokenStore.setToken(authToken);
+
       setAuthState(prevAuthState => ({ ...prevAuthState, user, authToken }));
     },
     onLogout: () => {
@@ -60,50 +64,44 @@ function App() {
     const { authToken } = authState;
     if (!authToken) return;
     API.Users.getMe(authToken)
-      .then(response => response.data)
-      .then(user => setAuthState(prevAuthState => ({ ...prevAuthState, user })))
-      .catch(err => console.log(err));
+
+      .then((response) => response.data)
+      .then((user) =>
+        setAuthState((prevAuthState) => ({ ...prevAuthState, user }))
+      )
+      .catch((err) => console.log(err));
   }, []);
+
   return (
     <Router>
       <AuthContext.Provider value={authState}>
-        <div className="App">
-          <div className="banner">
+        <div className="banner">
+          <Link className="banner-link" to="/">
             <img src={snkrsBanner} />
-            <div className="burger" onClick={menuOpen}>
-              <div className="burger-bar" id="1"></div>
-              <div className="burger-bar" id="2"></div>
-              <div className="burger-bar" id="3"></div>
-            </div>
+          </Link>
+          <div className="burger" onClick={menuOpen}>
+            <div className="burger-bar" id="1"></div>
+            <div className="burger-bar" id="2"></div>
+            <div className="burger-bar" id="3"></div>
           </div>
-          <Navbar
-            currentBarState={barState}
-            currentPopState={popState}
-            changePopState={changePopState}
-          />
-          <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/stories" component={Stories} />
-            <Route exact path="/shop" component={Shop} />
-            <Route exact path="/vision" component={Vision} />
-            <Route exact path="/team" component={Team} />
-          </Wrapper>
         </div>
-      </div>
-      <Navbar
-        currentBarState={barState}
-        currentPopState={popState}
-        changePopState={changePopState}
-      />
-      <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/stories" component={Stories} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/vision" component={Vision} />
-        <Route exact path="/team" component={Team} />
-        <Route exact path="/userstory" component={Contact} />
-        <Route exact path="/contact" component={Form} />
-      </Wrapper>
+        <Navbar
+          currentBarState={barState}
+          currentPopState={popState}
+          changePopState={changePopState}
+        />
+        <Wrapper
+          className={
+            popState === true || barState === true ? "bg-dim" : "bg-show"
+          }
+        >
+          <Route exact path="/" component={Home} />
+          <Route exact path="/stories" component={Stories} />
+          <Route exact path="/shop" component={Shop} />
+          <Route exact path="/vision" component={Vision} />
+        </Wrapper>
+      </AuthContext.Provider>
+
     </Router>
   );
 }

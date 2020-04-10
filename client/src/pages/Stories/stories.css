@@ -1,10 +1,279 @@
-.stories-header {
+.story-banner {
     width: 100%;
-    height: 25vh;
-    margin-bottom: 30px;
-    border: solid 2px black;
+    height: 3vh;
+    margin: 15px 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+.story-overview {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+.fa-quote-left, .fa-quote-right{
+    font-size: 35px;
+    color: rgb(167, 167, 167);
+}
+
+.fa-quote-right {
+    align-self: flex-end;
 }
 
 .pull-quote {
+    font-size: 30px;
+    text-align: start;
+    line-height: .9em;
+    margin: 8px;
+    font-weight: 800;
+}
+
+.stories-carousel {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.story-splash {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.shoe-specs {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* margin: 5px 0; */
+    /* padding: 0 40px; */
+}
+
+.story-splash img {
+      width: 100%;
+}
+
+
+
+.pull-quote {
+    text-align: start;
+    line-height: .85em;
+    font-size: 40px;
+    padding: 10px 15px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.gallery-container {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.gal-image {
+    width: 33.33%;
+    /* margin: 2px; */
+    /* border: solid 1px rgba(63, 63, 63, 0.733); */
+    object-fit:cover;
+}
+
+.gal-image img {
+    object-fit: fill;
+}
+
+.specs-title {
+    text-align: center;
+    background-color: #77c043;
+    color: white;
+    padding: 80px 40px;
+    line-height: 1.9em;
+    width: 100%;
+}
+
+.specs-title h1 {
+    font-size: 45px;
+    font-weight: 800
+}
+
+.specs-title li {
+    font-size: 19px;
+    font-weight: 500
+}
+
+.features {
+    padding: 25px 65px;
+    line-height: 1.45em;;
+    text-align: start;
+    color: white;
+    background-color: rgb(160, 160, 160);
+    width: 100%;
+}
+
+.features h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.features li {
+    font-size: 15px;
+    list-style-type: disc;
+    margin-left: 18px;
+    width: 100%;
+}
+
+.story-summary {
+    text-align: start;
+    font-size: 15px;
+    margin-top: 10px;
+    /* padding: 20px; */
+}
+
+.button-bar {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 10px 15px;
+}
+
+.story-button {
+    width: 28%;
+    color: white;
+    background-color: black;
+}
+
+.next-button {
+    float: right;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .story-banner {
+        font-size: 35px;
+        margin: 25px 0;
+    }
+
+    .stories-middle {
+        margin-top : 20px;
+        width: 100%;
+        flex-direction: row-reverse;
+        /* border: solid 1px black; */
+        height: 35vh;
+    }
+
+    .story-splash {
+        flex-direction: row;
+        height: 468px;
+        margin-bottom: 20px;
+        /* bordeR: solid 1px black; */
+    }
+    
+    .carousel-container {
+        width: 50%;
+        /* overflow: hidden; */
+    }
+
+    .carousel-container div {
+       object-fit: contain;
+       width: 100%;
+    }
+
+    .story-overview {
+        margin: 0;
+        width: 50%;
+        /* padding: 0; */
+    }
+
+    .shoe-specs {
+        justify-content: flex-start;
+        margin: 0;
+        width: 50%;
+        /* float: right; */
+    }
+
+    .stories-middle {
+        display: flex;
+        /* justify-content: space-between; */
+        /* border-bottom: 1px black solid; */
+    }
+
+    .features {
+        /* padding: 43px 65px; */
+        width: 95%;
+    }
+
+    .features h1 {
+        font-size: 20px;
+    }
+
+    .features li {
+        font-size: 15px;
+    }
+
+    .story-overview {
+        /* padding-lef: 0px 25px; */
+    }
+
+    .gallery-container {
+        /* position: absolute; */
+        width: 50%;
+        margin: 0;
+        /* margin-left: 25px; */
+        /* float: left; */
+        /* padding: 40px 0; */
+    }
+
+    .story-summary {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.2em;
+        padding: 10px;
+        padding-right: 50px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .specs-title {
+        padding: 47px 30px;
+        /* margin-left: 25px; */
+        width: 95%;
+    }
+
+    .button-bar {
+        padding: 20px 25px 10px 25px;
+    }
+
+    .story-button {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+ 
+}
+
+@media only screen and (min-width: 1408px) {
+    .story-overview {
+        padding: 0px 25px;
+    }
+
+    .story-splash {
+        flex-direction: row;
+        height: 65.2vh;
+    }
+
+    .carousel-container {
+        overflow: visible;
+    }
+
+    .pull-quote {
+        font-size: 85px;
+        margin: 0;
+        padding-bottom: 0;
+    }
 }
