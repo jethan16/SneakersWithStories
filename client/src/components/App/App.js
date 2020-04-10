@@ -11,6 +11,7 @@ import Vision from "../../pages/Vision";
 import Team from "../../pages/Team";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
+import API from "../../lib/API"
 
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
@@ -65,8 +66,8 @@ function App() {
       .catch(err => console.log(err));
   }, []);
   return (
-    <Router>
-      <AuthContext.Provider value={authState}>
+    <AuthContext.Provider value={authState}>
+      <Router>
         <div className="App">
           <div className="banner">
             <img src={snkrsBanner} />
@@ -89,22 +90,8 @@ function App() {
             <Route exact path="/team" component={Team} />
           </Wrapper>
         </div>
-      </div>
-      <Navbar
-        currentBarState={barState}
-        currentPopState={popState}
-        changePopState={changePopState}
-      />
-      <Wrapper className={popState === true || barState === true ? 'bg-dim' : 'bg-show'}>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/stories" component={Stories} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/vision" component={Vision} />
-        <Route exact path="/team" component={Team} />
-        <Route exact path="/userstory" component={Contact} />
-        <Route exact path="/contact" component={Form} />
-      </Wrapper>
-    </Router>
+      </Router>
+    </AuthContext.Provider >
   );
 }
 export default App;
