@@ -25,7 +25,7 @@ class Forms extends React.Component {
         return (
             <form className="k-form">
                 <fieldset>
-                    <h1 style={{ fontSize: '50px' }}>Enter First Name</h1>
+                    <h1>First Name</h1>
                     <input
                         name='firstName'
                         placeholder='Mary'
@@ -33,7 +33,7 @@ class Forms extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Last Name</h1>
+                    <h1>Last Name</h1>
                     <input
                         name='lastName'
                         placeholder=' Poppin'
@@ -41,7 +41,7 @@ class Forms extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Username</h1>
+                    <h1>Username</h1>
                     <input
                         name='username'
                         placeholder='MaryP123'
@@ -49,7 +49,7 @@ class Forms extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Valid Emial</h1>
+                    <h1>Emial</h1>
                     <input
                         name='email'
                         placeholder='MaryPoppins@gmail.com'
