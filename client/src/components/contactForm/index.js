@@ -1,13 +1,12 @@
 import React from "react";
 import "../../components/storiesForm/style.css";
 
-
-class Forms extends React.Component {
+class Contact extends React.Component {
     state = {
         firstName: '',
         lastName: '',
-        username: '',
-        email: ''
+        email: '',
+        story: ''
     };
 
     change = e => {
@@ -36,24 +35,24 @@ class Forms extends React.Component {
                     <h1 style={{ fontSize: '50px' }}>Enter Last Name</h1>
                     <input
                         name='lastName'
-                        placeholder=' Poppin'
+                        placeholder='Poppins'
                         value={this.state.lastName}
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Username</h1>
+                    <h1 style={{ fontSize: '50px' }}>Enter Valid Email</h1>
                     <input
-                        name='username'
-                        placeholder='MaryP123'
-                        value={this.state.username}
+                        name='email'
+                        placeholder='Marypoppins@gmail.com'
+                        value={this.state.email}
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1 style={{ fontSize: '50px' }}>Enter Valid Emial</h1>
-                    <input
-                        name='email'
-                        placeholder='MaryPoppins@gmail.com'
-                        value={this.state.email}
+                    <h1 style={{ fontSize: '50px' }}>Your Story</h1>
+                    <textarea
+                        name='story'
+                        placeholder='Share your story'
+                        value={this.state.story}
                         onChange={e => this.change(e)}
                     />
                     <br />
@@ -64,4 +63,4 @@ class Forms extends React.Component {
     }
 }
 
-export default Forms;
+export default Contact;

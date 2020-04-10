@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import API from "../../lib/API.js";
 import TokenStore from "../../lib/TokenStore";
 import AuthContext from "../../contexts/AuthContext";
+
 import Wrapper from "../Wrapper";
 import Navbar from "../navbar";
 import Home from "../../pages/Home";
@@ -11,6 +13,10 @@ import Stories from "../../pages/Stories";
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
 import Team from "../../pages/Team";
+
+import Form from "../../components/storiesForm";
+import Contact from "../../components/contactForm";
+
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
@@ -46,21 +52,19 @@ function App() {
     authToken: TokenStore.getToken(),
     onLogin: (user, authToken) => {
       TokenStore.setToken(authToken);
-      setAuthState((prevAuthState) => ({ ...prevAuthState, user, authToken }));
+
+      setAuthState(prevAuthState => ({ ...prevAuthState, user, authToken }));
     },
     onLogout: () => {
       TokenStore.clearToken();
-      setAuthState((prevAuthState) => ({
-        ...prevAuthState,
-        user: undefined,
-        authToken: undefined,
-      }));
-    },
+      setAuthState(prevAuthState => ({ ...prevAuthState, user: undefined, authToken: undefined }));
+    }
   });
   useEffect(() => {
     const { authToken } = authState;
     if (!authToken) return;
     API.Users.getMe(authToken)
+
       .then((response) => response.data)
       .then((user) =>
         setAuthState((prevAuthState) => ({ ...prevAuthState, user }))
@@ -97,8 +101,8 @@ function App() {
           <Route exact path="/vision" component={Vision} />
         </Wrapper>
       </AuthContext.Provider>
+
     </Router>
   );
 }
-
 export default App;
