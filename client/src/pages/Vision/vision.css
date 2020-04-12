@@ -1,0 +1,136 @@
+.vision-upper {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision-lower {
+  display: flex;
+  flex-direction: column;
+}
+
+.vision-lower-content {
+  width: 91.65%;
+  height: 40vh;
+  /* background-color: rgb(204, 203, 203); */
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+}
+
+.lower-splash {
+  /* border: solid 2px red;  */
+  height: 241px;
+  background-image: url(../../images/Daniel_profile.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.vision-hero {
+  width: 100vw;
+  height: 40vh;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin: 0 auto;
+}
+
+.vision-content {
+  width: 91.65%;
+  height: 40vh;
+  /* background-color: rgb(204, 203, 203); */
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+}
+
+@media only screen and (min-width: 1024px) {
+  .vision-upper {
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 91.6%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* border: solid 1px black; */
+  }
+
+  .vision-lower {
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    width: 91.6%;
+    margin: 0 auto;
+  }
+
+  .vision-content {
+    font-size: 18px;
+  }
+
+  .vision-hero {
+    flex-direction: row;
+    justify-content: center;
+    width: 91.65%;
+    /* margin-left: 70px; */
+  }
+
+  .vision-hero-splash {
+    width: 45.8%;
+    height: 51vh;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .vision-hero-content {
+    width: 45.8%;
+    height: 51vh;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .vision-lower-content {
+    width: 50%;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .lower-splash {
+    height: 295px;
+    width: 50%;
+    /* border: solid 2px red; */
+    background-image: url(../../images/Daniel_profile.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .vision-lower {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .vision-middle {
+    font-size: 35px;
+    height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1408px) {
+  .vision-hero {
+    height: 70vh;
+  }
+
+  .vision-content {
+    height: 70vh;
+    font-size: 25px;
+  }
+
+  .lower-splash {
+    height: 523px;
+  }
+}

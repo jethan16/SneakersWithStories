@@ -9,7 +9,7 @@ import chevronRight from "../../images/icons/chevron-right.png"
 function Hero() {
   return (
     <section className="hero">
-      <img className='hero-splash' src="https://sneakers-with-stories.s3.us-east-2.amazonaws.com/BIAShoes-1.jpg" alt="armies shoes" />
+      <img className='hero-splash' src="" alt="splash" />
       <div className='hero-text'>
         <h1>Some stories require laces, not words.</h1>
         <Link to="/vision">

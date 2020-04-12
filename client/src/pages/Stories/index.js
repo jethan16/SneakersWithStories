@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import StoriesWrapper from "../../components/StoriesWrapper";
 import StoryBody from "../../components/StoryBody";
 import Footer from "../../components/Footer";
-import Dean1 from "../../images/shoes/2_Panthers/gal-images/gal-image-1.png";
-import Dean2 from "../../images/shoes/2_Panthers/gal-images/gal-image-2.png";
-import Dean3 from "../../images/shoes/2_Panthers/gal-images/gal-image-3.png";
-import Dean4 from "../../images/shoes/2_Panthers/gal-images/gal-image-4.png";
+// import Dean1 from "../../images/shoes/2_Panthers/gal-images/gal-image-1.png";
+// import Dean2 from "../../images/shoes/2_Panthers/gal-images/gal-image-2.png";
+// import Dean3 from "../../images/shoes/2_Panthers/gal-images/gal-image-3.png";
+// import Dean4 from "../../images/shoes/2_Panthers/gal-images/gal-image-4.png";
 // import Panthers_1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
 // import Panthers_2 from "../../images/shoes/2_Panthers/Panthers_2.jpg";
 // import Panthers_3 from "../../images/shoes/2_Panthers/Panthers_3.jpg";
@@ -56,7 +57,6 @@ let storage = [
       "/images/shoes/2_Panthers/Panthers_5.jpg",
       "/images/shoes/2_Panthers/Panthers_6.jpg",
     ],
-    galImages: [Dean1, Dean2, Dean3, Dean4],
     pullQuote: "Scott is a brilliant artist and cinema fanatic.",
     features: [
       "Buzz Lightyear themed",
@@ -79,7 +79,6 @@ let storage = [
       "/images/shoes/2_Panthers/Panthers_5.jpg",
       "/images/shoes/2_Panthers/Panthers_6.jpg",
     ],
-    galImages: [Dean1, Dean2, Dean3, Dean4],
     pullQuote: "She deserved a great shoe.",
     features: ["Water theme", `cool artz`, `pretty laces`],
     storySummary: "She seems neat",

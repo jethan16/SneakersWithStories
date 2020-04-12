@@ -15,11 +15,17 @@ import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
   let [barState, setBarState] = useState(false);
+  let [menuBarState, setMenuBarState] = useState(false);
   let [popState, setPopState] = useState(false);
+
   const changePopState = () => {
     setPopState(!popState);
   };
+  const changeBarState = () => {
+    setBarState(!barState)
+  }
   function menuOpen() {
+    setMenuBarState(!menuBarState)
     setBarState(!barState);
     const barOne = document.getElementById("1");
     const barTwo = document.getElementById("2");
@@ -34,13 +40,11 @@ function App() {
       barThree.classList.remove("bar-three");
     }
   }
-  function status() {
-    if (popState === false || barState === false) {
-      return "bg-show";
-    } else if (popState === true || barState === true) {
-      return "bg-dim";
-    }
-  }
+
+  // function menuClose() {
+  //   setMenuBarState(!menuBarState)
+  // }
+
   let [authState, setAuthState] = useState({
     user: undefined,
     authToken: TokenStore.getToken(),
@@ -75,7 +79,7 @@ function App() {
           <Link className="banner-link" to="/">
             <img src={snkrsBanner} />
           </Link>
-          <div className="burger" onClick={menuOpen}>
+          <div className='burger' onClick={menuOpen}>
             <div className="burger-bar" id="1"></div>
             <div className="burger-bar" id="2"></div>
             <div className="burger-bar" id="3"></div>
@@ -85,6 +89,8 @@ function App() {
           currentBarState={barState}
           currentPopState={popState}
           changePopState={changePopState}
+          changeBarState={changeBarState}
+          menuOpen={menuOpen}
         />
         <Wrapper
           className={

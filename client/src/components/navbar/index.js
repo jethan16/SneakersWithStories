@@ -12,7 +12,7 @@ function Navbar(props) {
 
   return (
     <div>
-      <div className={`columns nav-bar ${props.currentBarState === false ? 'nav-mobile-hide' : ''}`}>
+      <div className={`columns nav-bar ${props.currentBarState === false ? 'nav-mobile-hide' : ''}`} onClick={props.menuOpen}>
         <Link className="logo" to="/">
           <img src={logoKO} />
         </Link>
