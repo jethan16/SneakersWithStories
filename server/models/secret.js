@@ -3,11 +3,17 @@ const Schema = mongoose.Schema;
 
 const SecretSchema = new Schema({
 
-    subject: {
+    title: {
         type: String,
         trim: true,
-        required: "Subject is required"
+        required: "title is required"
     },
+    name: {
+        type: String,
+        trim: true,
+        required: "name is required"
+    },
+    silhouette: String,
     shoeImages: [String],
     galImages: {
         type: Array
@@ -17,11 +23,11 @@ const SecretSchema = new Schema({
         trim: true,
         required: "Quote is required"
     },
-    features: [String],
+    highlights: [String],
     storySummary: {
         type: String,
         trim: true,
-        required: "Quote is required"
+        required: "story is required"
     }
 })
 
