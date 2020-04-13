@@ -345,8 +345,8 @@ let infoSeed = [
     }, 
 
 ];
-db.Secret.deleteMany({})
-    .then(() => db.Secret.collection.insertMany(infoSeed))
+db.Stories.deleteMany({})
+    .then(() => db.Stories.collection.insertMany(infoSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);
