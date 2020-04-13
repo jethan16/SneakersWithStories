@@ -42,7 +42,7 @@ textarea{
     font-size: 25px;
     border: none;
     border-bottom:1px black solid;
-    width: 29%;
+    width: 100%;
     /* margin-left: 60px; */
 }
 @media  only screen and (max-width: 375px) {

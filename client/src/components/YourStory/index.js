@@ -6,7 +6,7 @@ import "./yourStory.css";
 
 function YourStory() {
   return (
-    <Link to='/stories'>
+    <Link to='/contact'>
       <div className="middle">
         <div className='middle-left'></div>
         <div className='middle-right'></div>
