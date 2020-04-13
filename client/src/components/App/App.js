@@ -66,6 +66,7 @@ function App() {
     }
   });
   useEffect(() => {
+    document.title = 'SNKRS with Stories'
     const { authToken } = authState;
     if (!authToken) return;
     API.Users.getMe(authToken)
