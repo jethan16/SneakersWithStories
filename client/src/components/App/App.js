@@ -16,7 +16,6 @@ import Vision from "../../pages/Vision";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
 
-
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
