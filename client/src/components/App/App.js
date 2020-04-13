@@ -12,7 +12,6 @@ import Stories from "../../pages/Stories";
 import API from '../../lib/API';
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
-import Team from "../../pages/Team";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
 
@@ -96,8 +95,9 @@ function App() {
             <Route exact path="/stories" component={Stories} />
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/vision" component={Vision} />
-            <Route exact path="/team" component={Team} />
             <Route path='/login' component={Login} />
+            <Route path='/form' component={Form} />
+            <Route path='/contact' component={Contact} />
             <PrivateRoute path='/secret' component={Secret} />
           </Wrapper>
         </div>

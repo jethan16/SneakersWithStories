@@ -7,20 +7,31 @@ function Vision() {
     <div>
       <div className="vision-upper">
         <div className="vision-hero upper-splash"></div>
-        <p className="vision-content">
-          <span style={{ color: "green" }}>SNKRSwithStories</span> was born as a
-          way to combine the art of custom shoes and the need for people to feel
-          seen and known. Everyone has a story that drives their desire to
-          capture moments in art. Our belief is that those moments should not
-          take a backseat to the art, but that the art should complement the
-          story being told. This approach begins and ends with empathy, and from
-          empathy comes great art and beautiful stories. We exist to make sure
-          those stories are being told and are represented well in the art.
-        </p>
+        <div className="vision-content">
+          <p>
+          <div className="pull-quote vision-quote">
+            <i className="fas fa-quote-left"></i>
+            <p>
+              Everyone has a story that drives their desire to capture moments
+              in art.
+            </p>
+            <i className="fas fa-quote-right"></i>
+          </div>
+            <span style={{ color: "#77c043" }}>SNKRSwithStories</span> was born
+            as a way to combine the art of custom shoes and the need for people
+            to feel seen and known. Everyone has a story that drives their
+            desire to capture moments in art. Our belief is that those moments
+            should not take a backseat to the art, but that the art should
+            complement the story being told. This approach begins and ends with
+            empathy, and from empathy comes great art and beautiful stories. We
+            exist to make sure those stories are being told and are represented
+            well in the art.
+          </p>
+        </div>
       </div>
       <div className="vision-lower">
         <div className="lower-splash"></div>
-        <p className="vision-lower-content">
+        {/* <p className="vision-lower-content">
           Daniel Brenneman is the founder, creative director, and shoe creator
           for SNKRSwithStories. He is a jack of all trades and has spent many
           years diving headfirst into hobbies that would teach him the skills to
@@ -29,9 +40,9 @@ function Vision() {
           to have told many stories across many facets of society for many
           different types of people and, through that, made countless people
           feel seen and known.
-        </p>
+        </p> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

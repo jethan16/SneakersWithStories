@@ -5,15 +5,8 @@ import "react-multi-carousel/lib/styles.css";
 import StoriesWrapper from "../../components/StoriesWrapper";
 import StoryBody from "../../components/StoryBody";
 import Footer from "../../components/Footer";
-// import Dean1 from "../../images/shoes/2_Panthers/gal-images/gal-image-1.png";
-// import Dean2 from "../../images/shoes/2_Panthers/gal-images/gal-image-2.png";
-// import Dean3 from "../../images/shoes/2_Panthers/gal-images/gal-image-3.png";
-// import Dean4 from "../../images/shoes/2_Panthers/gal-images/gal-image-4.png";
-// import Panthers_1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
-// import Panthers_2 from "../../images/shoes/2_Panthers/Panthers_2.jpg";
-// import Panthers_3 from "../../images/shoes/2_Panthers/Panthers_3.jpg";
-// import Panthers_4 from "../../images/shoes/2_Panthers/Panthers_4.jpg";
-// import Panthers_5 from "../../images/shoes/2_Panthers/Panthers_5.jpg";
+import ReactDOM from "react-dom";
+import Modal from "react-modal";
 import "./stories.css";
 
 let storage = [
@@ -133,6 +126,8 @@ function Stories() {
   const [storyIndex, setStoryIndex] = useState(0);
   const currentStory = storage[storyIndex];
 
+  // Story navigation logic
+
   const getNextStory = () => {
     console.log("clicked right");
 
@@ -154,15 +149,39 @@ function Stories() {
     setStoryIndex(storyIndex - 1);
   };
 
+  //
+
+  // Modal logic
+  // let modalImage;
+  var subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalImage, setModalImage] = React.useState();
+  function openModal(image) {
+    console.log(image);
+
+    setIsOpen(true);
+    setModalImage(image)
+    // modalImage = image;
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+  //
   return (
     <StoriesWrapper>
       <div className="title-bar">
         <div onClick={getLastStory}>
-          <i class="fas fa-chevron-left title-button"></i>
+          <i className="fas fa-chevron-left title-button"></i>
         </div>
         <h1 className="story-banner">{currentStory.subject}</h1>
         <div onClick={getNextStory}>
-          <i class="fas fa-chevron-right title-button"></i>
+          <i className="fas fa-chevron-right title-button"></i>
         </div>
       </div>
       <Carousel
@@ -175,12 +194,11 @@ function Stories() {
         ))}
       </Carousel>
       <div className="pull-quote">
-        <i class="fas fa-quote-left"></i>
+        <i className="fas fa-quote-left"></i>
         <p>{currentStory.pullQuote}</p>
-        <i class="fas fa-quote-right"></i>
+        <i className="fas fa-quote-right"></i>
       </div>
       <p className="story-summary">{currentStory.storySummary}</p>
-
       <div className="stories-lower">
         <div className="shoe-specs">
           <ul className="features">
@@ -195,12 +213,33 @@ function Stories() {
           </ul>
         </div>
         <div className="gallery-container">
-          {currentStory.galImages.map((image) => (
-            <img className="gal-image" src={image}></img>
-          ))}
+          {currentStory.galImages.map((image) => {
+            return (
+              <img
+                className="gal-image"
+                src={image}
+                onClick={() => openModal(image)}
+              ></img>
+            );
+          })}
         </div>
       </div>
-
+      <div>
+        <Modal
+          className='modal-image'
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          // style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <button className='modal-icon' onClick={closeModal}>
+            <i className="fas fa-times"></i>
+          </button>
+          {/* {console.log(modalImage)} */}
+          <img src={modalImage} alt='shoe close up'></img>
+        </Modal>
+      </div>
       <Footer />
     </StoriesWrapper>
   );

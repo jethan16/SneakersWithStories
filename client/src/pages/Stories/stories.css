@@ -103,6 +103,27 @@
   /* border: solid 1px black; */
 }
 
+.modal-image {
+  margin-top: 200px;
+  outline: none;
+}
+
+.modal-icon {
+  outline: none;
+  font-size: 25px;
+  position: relative;
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  top: 15px;
+  left: 10px;
+}
+
+.modal-icon:active {
+  transition: .1s;
+  font-size: 24px;
+}
+
 
 
 @media only screen and (min-width: 1024px) {
@@ -174,6 +195,17 @@
     padding: 50px;
   }
 
+  .modal-image {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 50px;
+    outline: none;
+  }
+
+  .modal-icon {
+    
+  }
+
 }
 
 @media only screen and (min-width: 1408px) {
@@ -183,6 +215,11 @@
 
   .story-summary {
     font-size: 23px;
+  }
+
+  .gal-image:hover {
+    opacity: .5;
+    transition: .15s ease-in-out;
   }
 
   .shoe-specs {
@@ -203,5 +240,20 @@
 
   .gallery-container {
     width: 50%;
+  }
+
+  .modal-image {
+    margin: 0 auto;
+    width: 45%;
+    margin-top: 55px;
+    outline: none;
+  }
+
+  .modal-icon {
+    font-size: 35px;
+    /* position: relative; */
+    /* top: 15px; */
+    /* left: 10px; */
+    /* background-color: white; */
   }
 }
