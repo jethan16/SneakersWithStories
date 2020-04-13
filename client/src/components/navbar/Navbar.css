@@ -55,10 +55,10 @@
   }
   
   .nav-title {
-    width: 15vw;
+    width: 13vw;
     text-align: center;
     margin-right: 0;
-    font-size: 15px;
+    font-size: 13px;
     color: black;
     padding: 0 8.45px;
     font-weight: bold;
@@ -119,16 +119,20 @@
     height: 60px;
     z-index: 10;
     background-color: white;
+    /* border-bottom: solid rgb(95, 95, 95) 1px; */
   }
 
   .logo {
     width: 3.5%;
+    position: relative;
+    left: 15px;
   }
 
   .nav-title {
+    width: 13.35vw;
     font-size: 15px;
     font-weight: bold;
-    padding: 18.4px;
+    padding: 21px;
   }
 
   .has-margin-left {
