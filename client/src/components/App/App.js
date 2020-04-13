@@ -14,7 +14,7 @@ import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
-import API from "../../lib/API"
+
 
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
