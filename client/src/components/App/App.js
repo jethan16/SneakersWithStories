@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 import TokenStore from '../../lib/TokenStore';
 import AuthContext from '../../contexts/AuthContext';
 import Wrapper from "../Wrapper";
@@ -12,7 +12,6 @@ import Stories from "../../pages/Stories";
 
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
-import Team from "../../pages/Team";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
 import API from "../../lib/API"
@@ -21,11 +20,17 @@ import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
   let [barState, setBarState] = useState(false);
+  let [menuBarState, setMenuBarState] = useState(false);
   let [popState, setPopState] = useState(false);
+
   const changePopState = () => {
     setPopState(!popState);
   };
+  const changeBarState = () => {
+    setBarState(!barState)
+  }
   function menuOpen() {
+    setMenuBarState(!menuBarState)
     setBarState(!barState);
     // const root = document.getElementById('root')
     const barOne = document.getElementById("1");
@@ -42,13 +47,11 @@ function App() {
       barThree.classList.remove("bar-three");
     }
   }
-  function status() {
-    if (popState === false || barState === false) {
-      return "bg-show";
-    } else if (popState === true || barState === true) {
-      return "bg-dim";
-    }
-  }
+
+  // function menuClose() {
+  //   setMenuBarState(!menuBarState)
+  // }
+
   let [authState, setAuthState] = useState({
     user: undefined,
     authToken: TokenStore.getToken(),
@@ -74,7 +77,9 @@ function App() {
       <Router>
         <div className="App">
           <div className="banner">
+          <Link to='/' className='banner-link'>
             <img src={snkrsBanner} />
+          </Link>
             <div className="burger" onClick={menuOpen}>
               <div className="burger-bar" id="1"></div>
               <div className="burger-bar" id="2"></div>
@@ -91,8 +96,9 @@ function App() {
             <Route exact path="/stories" component={Stories} />
             <Route exact path="/shop" component={Shop} />
             <Route exact path="/vision" component={Vision} />
-            <Route exact path="/team" component={Team} />
             <Route path='/login' component={Login} />
+            <Route path='/form' component={Form} />
+            <Route path='/contact' component={Contact} />
             <PrivateRoute path='/secret' component={Secret} />
           </Wrapper>
         </div>

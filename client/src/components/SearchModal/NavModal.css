@@ -81,7 +81,7 @@
 
   .left-box {
     width: 100%;
-    background-image: url(../../images/shoes/1_Hornets/Hornets_1.jpg);
+    background-image: url(https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-1.jpg);
     background-size: cover;
     background-position: center;
     border-right: solid 1px black;
@@ -101,13 +101,13 @@
   }
 
   .one {
-    background-image: url(../../images/shoes/5_Rangers/Rangers_2.jpg);
+    background-image: url(https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/penrose-1.jpg);
   }
   .two {
-    background-image: url(../../images/shoes/cancer.png);
+    background-image: url(https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-7.jpg);
   }
   .three {
-    background-image: url(../../images/shoes/rangers.png);
+    background-image: url(https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-3.jpg);
   }
 
 }
@@ -122,7 +122,7 @@
 
   .search-window {
     position: absolute;
-    top: 118px;
+    top: 110px;
     width: 100vw;
     z-index: 10;
     overflow-y: hidden;
