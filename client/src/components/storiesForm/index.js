@@ -49,7 +49,7 @@ class Forms extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <h1>Emial</h1>
+                    <h1>Email</h1>
                     <input
                         name='email'
                         placeholder='MaryPoppins@gmail.com'
@@ -57,7 +57,11 @@ class Forms extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <button className="save-btn" onClick={e => this.onSubmit(e)}>Submit</button>
+                
+                    <button className="save-btn" onClick={e => this.onSubmit(e)}>
+                        Submit
+                    </button>
+                    
                 </fieldset>
             </form>
         )
