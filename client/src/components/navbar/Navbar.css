@@ -9,7 +9,7 @@
 .nav-bar {
   position: absolute;
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   margin: 0px auto;
   display: flex;
   flex-direction: column;

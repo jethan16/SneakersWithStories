@@ -4,14 +4,14 @@
 
 @media only screen and (min-width: 1024px) {
   .search-show {
-    height: 30vh;
+    height: 45vh;
     border-top: solid black 1px;
     transform: translate(0);
     transition: 0.175s ease-out;
   }
 
   .search-hide {
-    height: 30vh;
+    height: 45vh;
     border-top: solid black 1px;
     transform: translate(-200%);
     transition: 0.2s ease-in;
@@ -20,7 +20,7 @@
   .search-window {
     display: inline;
     position: absolute;
-    top: 111px;
+    top: 95px;
     width: 100vw;
     z-index: 10;
     overflow-y: hidden;
@@ -34,6 +34,7 @@
 
   .search-bar-modal img {
     position: relative;
+    bottom: 50px;
     right: -5px;
     margin-bottom: 5px;
     width: 22px;
@@ -93,11 +94,12 @@
     border-top: solid 1px black;
   }
 
-  .modal-image {
+  .search-modal-image {
     width: 33.33%;
     /* height: 100px; */
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .one {
