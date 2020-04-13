@@ -32,7 +32,7 @@ let infoSeed = [
              Shortly after the daily calls and voicemails on that subject began, Dean got sick, ended up in the ICU and would go on to 
              pass in late August. In his honor, we still attended a game, got rowdier than ever, and watched the Panthers obliterate the 
              Ravens. It had Dean’s hand all over it. These shoes will always help me remember my brother in one of the only ways he’d want 
-             to be remembered - with his own shoe containing the story of the Carolina Panthers. -Jonathan Adcock`,
+             to be remembered - with his own shoe containing the story of the Carolina Panthers.`,
     shoeImages: [
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-1.jpg",
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-2.jpg",
@@ -50,6 +50,130 @@ let infoSeed = [
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-6.jpg",
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-7.jpg",
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-8.jpg",
+    ],
+  },
+  {
+    title: "YTHX",
+    name: "Tim Somers",
+    silhouette: "Vans Leather High Tops",
+    highlights: [
+      "Smiley face from YTHX ‘19 shirt",
+      "YTH logo on tongue",
+      "Preaching scripture on heel",
+      "Custom shoelaces",
+    ],
+    pullQuote:
+      "I was placed as the head of the youth ministry...for two short weeks",
+    storySummary: `I’ve always had a passion for youth and knew at a young age that being in the youth ministry was where I wanted to end up. 
+        As I was coming into my 20s, I began youth ministry through a couple stops in New Mexico and Texas. After several years out west, 
+        I heard a service by Elevation church and knew that’s where I needed to be. My family and I moved to Charlotte, NC without knowing anyone.
+        
+        After a few weeks of attending Elevation, I was prompted to apply for an apprenticeship there. I did so and ended up spending the 
+        next six months working at Elevation Church as a member of the 2K2 program. Following 2K2, I was hired on staff and spent a couple years 
+        moving in and out of youth roles at one of the campuses. During this time, I felt like God gave me a vision for what youth ministry at 
+        Elevation would be. Shortly there after, I was placed as the head of the youth ministry...for two short weeks. I ended up being replaced 
+        due to experience concerns and spent the next two years back at the campus and then building our online youth platform.
+        
+        Fast forward to YTHX 19. I would have the opportunity to preach on the main stage to thousands of youth and afterwards, 
+        would once again be made the head of the youth ministry. These shoes mark, almost to the day, the turning point towards what 
+        God had for me at Elevation Church.`,
+    shoeImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-5.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-6.jpg",
+    ],
+    galImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-5.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-6.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-7.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-8.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-9.jpg",
+    ],
+  },
+  {
+    title: "Toy Story",
+    name: "Scott Brinkley",
+    silhouette: "Converse Chuck Taylor High Tops",
+    highlights: [
+      "Badge mimics Buzz Lightyear’s",
+      "Striping on midsole mimics Buzz’s wings",
+      "Andy on bottom of shoe",
+    ],
+    pullQuote: "I thought I’d missed my only opportunity to draw for a living",
+    storySummary: `Growing up, drawing wasn’t just something I enjoyed. It permeated everything I did. It was the way I saw life. 
+        I drew for fun, to escape, and to just process life.
+        
+        John Lassiter, one of the founders of Pixar, was a close family friend when we lived in California and, 
+        after navigating his outrageous calendar, I was once able to sit down and show him my portfolio. He loved it and wrote a letter of 
+        recommendation to Cal Arts with a promise to me that I’d have a job at Pixar upon completion. To make a long story short, financing 
+        fell through and I wasn’t able to attend, therefore forfeiting the job offer thereafter. I was crushed and thought I’d missed my only 
+        opportunity to draw for a living.
+        
+        After several years of moving around and working jobs at all ends of the spectrum, I ended up attending Elevation church. 
+        I spoke to the creative director to see about a volunteering opportunity and walked out with a job. It’s been almost 8 years 
+        since and I’m still in awe that through the ins and outs, drawing is what I get to do with my life.`,
+    galImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-5.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-6.jpg",
+    ],
+    shoeImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-5.jpg",
+    ],
+  },
+  {
+    title: "Breast Cancer Awareness",
+    name: "Brandon Bullis",
+    silhouette: "Nike Ebernon Mid",
+    highlights: [
+      "Grandmother nicknames on heels",
+      "Vibrant triangular heel pattern",
+      "Large Little Pink Houses of Hope logo",
+      "Breast cancer ribbons on toe box",
+    ],
+    pullQuote: "Things change when A cause becomes YOUR cause",
+    storySummary: `Things change when A cause becomes YOUR cause. Brandon knows first hand what that’s like as that’s been 
+        his story over the last several years. 
+        
+        His mother (“Ganny” to the grand-children) and his mother-in-law (“Booya” to the grand-children) are both cancer breast 
+        cancer survivors and through that, he began to support “Little Pink Houses of Hope” - a charity founded by one of his 
+        former high school teachers that provides week long retreats for breast cancer patients and families. 
+        
+        When given the chance to attend a local “Dancing with the Stars” event put on by Little Pink Houses of Hope, he saw an 
+        opportunity to support a long time friend and participant in the competition as well as pay tribute to Ganny and Booya 
+        through custom shoes. 
+        
+        They were a hit and all those honored felt loved and appreciated. Shoes are great, but the ability to leave a lasting 
+        mark on the lives of those we love counts far greater than anything we put on our feet.`,
+    shoeImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-5.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-6.jpg",
+    ],
+    galImages: [
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-1.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-2.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-3.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-4.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-5.jpg",
+      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-6.jpg",
     ],
   },
   {
@@ -213,47 +337,6 @@ let infoSeed = [
     galImages: [],
   },
   {
-    title: "Breast Cancer Awareness",
-    name: "Brandon Bullis",
-    silhouette: "Nike Ebernon Mid",
-    highlights: [
-      "Grandmother nicknames on heels",
-      "Vibrant triangular heel pattern",
-      "Large Little Pink Houses of Hope logo",
-      "Breast cancer ribbons on toe box",
-    ],
-    pullQuote: "Things change when A cause becomes YOUR cause",
-    storySummary: `Things change when A cause becomes YOUR cause. Brandon knows first hand what that’s like as that’s been 
-        his story over the last several years. 
-        
-        His mother (“Ganny” to the grand-children) and his mother-in-law (“Booya” to the grand-children) are both cancer breast 
-        cancer survivors and through that, he began to support “Little Pink Houses of Hope” - a charity founded by one of his 
-        former high school teachers that provides week long retreats for breast cancer patients and families. 
-        
-        When given the chance to attend a local “Dancing with the Stars” event put on by Little Pink Houses of Hope, he saw an 
-        opportunity to support a long time friend and participant in the competition as well as pay tribute to Ganny and Booya 
-        through custom shoes. 
-        
-        They were a hit and all those honored felt loved and appreciated. Shoes are great, but the ability to leave a lasting 
-        mark on the lives of those we love counts far greater than anything we put on our feet.`,
-    shoeImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-5.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-6.jpg",
-    ],
-    galImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-5.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-6.jpg",
-    ],
-  },
-  {
     title: "Ellys",
     name: "SwS Personal Project",
     silhouette: "Air Jordan 1 Mid",
@@ -341,89 +424,6 @@ let infoSeed = [
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-2.jpg",
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-3.jpg",
       "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-4.jpg",
-    ],
-  },
-  {
-    title: "Toy Story",
-    name: "Scott Brinkley",
-    silhouette: "Converse Chuck Taylor High Tops",
-    highlights: [
-      "Badge mimics Buzz Lightyear’s",
-      "Striping on midsole mimics Buzz’s wings",
-      "Andy on bottom of shoe",
-    ],
-    pullQuote: "I thought I’d missed my only opportunity to draw for a living",
-    storySummary: `Growing up, drawing wasn’t just something I enjoyed. It permeated everything I did. It was the way I saw life. 
-        I drew for fun, to escape, and to just process life.
-        
-        John Lassiter, one of the founders of Pixar, was a close family friend when we lived in California and, 
-        after navigating his outrageous calendar, I was once able to sit down and show him my portfolio. He loved it and wrote a letter of 
-        recommendation to Cal Arts with a promise to me that I’d have a job at Pixar upon completion. To make a long story short, financing 
-        fell through and I wasn’t able to attend, therefore forfeiting the job offer thereafter. I was crushed and thought I’d missed my only 
-        opportunity to draw for a living.
-        
-        After several years of moving around and working jobs at all ends of the spectrum, I ended up attending Elevation church. 
-        I spoke to the creative director to see about a volunteering opportunity and walked out with a job. It’s been almost 8 years 
-        since and I’m still in awe that through the ins and outs, drawing is what I get to do with my life. -Scott Brinkley`,
-    galImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-5.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-6.jpg",
-    ],
-    shoeImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-5.jpg",
-    ],
-  },
-  {
-    title: "YTHX",
-    name: "Tim Somers",
-    silhouette: "Vans Leather High Tops",
-    highlights: [
-      "Smiley face from YTHX ‘19 shirt",
-      "YTH logo on tongue",
-      "Preaching scripture on heel",
-      "Custom shoelaces",
-    ],
-    pullQuote:
-      "I was placed as the head of the youth ministry...for two short weeks",
-    storySummary: `I’ve always had a passion for youth and knew at a young age that being in the youth ministry was where I wanted to end up. 
-        As I was coming into my 20s, I began youth ministry through a couple stops in New Mexico and Texas. After several years out west, 
-        I heard a service by Elevation church and knew that’s where I needed to be. My family and I moved to Charlotte, NC without knowing anyone.
-        
-        After a few weeks of attending Elevation, I was prompted to apply for an apprenticeship there. I did so and ended up spending the 
-        next six months working at Elevation Church as a member of the 2K2 program. Following 2K2, I was hired on staff and spent a couple years 
-        moving in and out of youth roles at one of the campuses. During this time, I felt like God gave me a vision for what youth ministry at 
-        Elevation would be. Shortly there after, I was placed as the head of the youth ministry...for two short weeks. I ended up being replaced 
-        due to experience concerns and spent the next two years back at the campus and then building our online youth platform.
-        
-        Fast forward to YTHX 19. I would have the opportunity to preach on the main stage to thousands of youth and afterwards, 
-        would once again be made the head of the youth ministry. These shoes mark, almost to the day, the turning point towards what 
-        God had for me at Elevation Church. -Tim Somers`,
-    shoeImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-5.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-6.jpg",
-    ],
-    galImages: [
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-1.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-2.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-3.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-4.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-5.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-6.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-7.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-8.jpg",
-      "https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-9.jpg",
     ],
   },
 ];

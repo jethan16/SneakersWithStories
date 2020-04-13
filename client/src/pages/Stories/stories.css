@@ -220,6 +220,10 @@
     font-size: 45px;
   }
 
+  .story-section {
+    height: 78vh;
+  }
+
   .story-summary {
     font-size: 23px;
   }
