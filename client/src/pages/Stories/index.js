@@ -193,7 +193,7 @@ function Stories() {
           <img className="story-img" src={image} />
         ))}
       </Carousel>
-      <div className="pull-quote">
+      <div className="pull-quote story-quote">
         <i className="fas fa-quote-left"></i>
         <p>{currentStory.pullQuote}</p>
         <i className="fas fa-quote-right"></i>
