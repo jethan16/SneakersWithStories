@@ -9,7 +9,7 @@ mongoose.connect("mongodb://localhost/ProjectThree", {
 
 let infoSeed = [
     {
-        title: "Alvarez Hornets",
+        title: "Alvarez Family",
         name: "Steven Alvarez",
         silhouette: "Air Force 1 Mid",
         highlights: ["Team Honeycomb pattern", "Buzz City heel logo", "Large Hornets logo", "City skyline on inside panel"],
@@ -30,8 +30,16 @@ let infoSeed = [
         
         It’s always a great (and welcomed) joy when your kids take an interest in one of your hobbies and you can partake in it 
         together. It’s a moment I won’t soon forget."  -Steven Alvarez`,
-        shoeImages: [],
-        galImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/hornets-5.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-5.jpg`]
     },
     {
         title: "Alvarez Rangers",
@@ -55,8 +63,15 @@ let infoSeed = [
         
         It’s always a great (and welcomed) joy when your kids take an interest in one of your hobbies and you can partake in it 
         together. It’s a moment I won’t soon forget."  -Steven Alvarez`,
-        shoeImages: [],
-        galImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/rangers-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/rangers-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/rangers-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/rangers-4.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-5.jpg`]
     },
     {
         title: "Alvarez Fortnight",
@@ -80,8 +95,17 @@ let infoSeed = [
         
         It’s always a great (and welcomed) joy when your kids take an interest in one of your hobbies and you can partake in it 
         together. It’s a moment I won’t soon forget."  -Steven Alvarez`,
-        shoeImages: [],
-        galImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/fortnite-6.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/alvarezFamily-5.jpg`]
     },
     {
         title: "Bones into Armies",
@@ -100,7 +124,14 @@ let infoSeed = [
         The word my family is rallying around this year is “restoration” - a true bones into armies term. Steven Furtick, 
         Chris Brown, Tiffany Hammer, and Brandon Lake delivered a poignant and timely reminder for what this year will hold 
         and now these shoes will carry the visual representation of the melody playing over and over in my head.`,
-        shoeImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-7.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/bonesIntoArmies-8.jpg`],
         galImages: [],
     },
     {
@@ -122,8 +153,19 @@ let infoSeed = [
         
         They were a hit and all those honored felt loved and appreciated. Shoes are great, but the ability to leave a lasting 
         mark on the lives of those we love counts far greater than anything we put on our feet.`,
-        shoeImages: [],
-        galImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/breastCancerAwareness-7.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/brandonStory-6.jpg`],
     },
     {
         title: "Ellys",
@@ -140,7 +182,11 @@ let infoSeed = [
         attire be donned, but I felt that it was appropriate to offset the formal with some fun - as the night itself would do. 
         It is always the most anticipated event of the year within Elevation Church staff culture and it only felt appropriate 
         that I celebrate it in my own unique way - with a story of candy, Christmas, and culture on my feet.`,
-        shoeImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ellys-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ellys-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ellys-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ellys-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ellys-5.jpg`],
         galImages: [],
     },
     {
@@ -164,8 +210,20 @@ let infoSeed = [
          pass in late August. In his honor, we still attended a game, got rowdier than ever, and watched the Panthers obliterate the 
          Ravens. It had Dean’s hand all over it. These shoes will always help me remember my brother in one of the only ways he’d want 
          to be remembered - with his own shoe containing the story of the Carolina Panthers. -Jonathan Adcock`,
-        shoeImages: [],
-        galImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/panthers-6.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-7.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/dean-8.jpg`],
     },
     {
         title: "Penrose Triangle",
@@ -186,9 +244,105 @@ let infoSeed = [
         
         Every time I see these shoes, I’m reminded of just how fun it was (and is) to lose yourself in a piece of art that 
         defies physics and makes your mind fill with wonder.`,
-        shoeImages: [],
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/penrose-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/penrose-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/penrose-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/penrose-4.jpg`],
         galImages: [],
     },
+    {
+        title: "Great Wave",
+        name: "Tinley Bullis",
+        silhouette: "Nike Court Borough Low",
+        highlights: ["Great Wave off Kanagawa side panel painting", "Yellow tongue tab", "Painting on Nike logo on heel"],
+        pullQuote: "She could carry those memories with her",
+        storySummary: `Family time is the best time. The ability to carry those memories with you, though, is priceless. 
+        
+        Every year, Tinley gets to spend a week with all her cousins at the beach and it’s one of her favorite weeks of the year. 
+        As a young appreciator of art, “The Great Wave Off Kanagawa” by Japanese artist Hokusai reminds her of all those moments shared by the 
+        family. For her, having pieces of that print on a pair of shoes was a way she could carry those memories with her well beyond that single 
+        week at the beach.`,
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinley-7.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/tinleyStory-4.jpg`],
+    },
+    {
+        title: "Toy Story",
+        name: "Scott Brinkley",
+        silhouette: "Converse Chuck Taylor High Tops",
+        highlights: ["Badge mimics Buzz Lightyear’s", "Striping on midsole mimics Buzz’s wings", "Andy on bottom of shoe"],
+        pullQuote: "I thought I’d missed my only opportunity to draw for a living",
+        storySummary: `Growing up, drawing wasn’t just something I enjoyed. It permeated everything I did. It was the way I saw life. 
+        I drew for fun, to escape, and to just process life.
+        
+        John Lassiter, one of the founders of Pixar, was a close family friend when we lived in California and, 
+        after navigating his outrageous calendar, I was once able to sit down and show him my portfolio. He loved it and wrote a letter of 
+        recommendation to Cal Arts with a promise to me that I’d have a job at Pixar upon completion. To make a long story short, financing 
+        fell through and I wasn’t able to attend, therefore forfeiting the job offer thereafter. I was crushed and thought I’d missed my only 
+        opportunity to draw for a living.
+        
+        After several years of moving around and working jobs at all ends of the spectrum, I ended up attending Elevation church. 
+        I spoke to the creative director to see about a volunteering opportunity and walked out with a job. It’s been almost 8 years 
+        since and I’m still in awe that through the ins and outs, drawing is what I get to do with my life. -Scott Brinkley`,
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/scottStory-7.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/toyStory-5.jpg`],
+    }, 
+    {
+        title: "YTHX",
+        name: "Tim Somers",
+        silhouette: "Vans Leather High Tops",
+        highlights: ["Smiley face from YTHX ‘19 shirt", "YTH logo on tongue", "Preaching scripture on heel", "Custom shoelaces"],
+        pullQuote: "I was placed as the head of the youth ministry...for two short weeks",
+        storySummary: `I’ve always had a passion for youth and knew at a young age that being in the youth ministry was where I wanted to end up. 
+        As I was coming into my 20s, I began youth ministry through a couple stops in New Mexico and Texas. After several years out west, 
+        I heard a service by Elevation church and knew that’s where I needed to be. My family and I moved to Charlotte, NC without knowing anyone.
+        
+        After a few weeks of attending Elevation, I was prompted to apply for an apprenticeship there. I did so and ended up spending the 
+        next six months working at Elevation Church as a member of the 2K2 program. Following 2K2, I was hired on staff and spent a couple years 
+        moving in and out of youth roles at one of the campuses. During this time, I felt like God gave me a vision for what youth ministry at 
+        Elevation would be. Shortly there after, I was placed as the head of the youth ministry...for two short weeks. I ended up being replaced 
+        due to experience concerns and spent the next two years back at the campus and then building our online youth platform.
+        
+        Fast forward to YTHX 19. I would have the opportunity to preach on the main stage to thousands of youth and afterwards, 
+        would once again be made the head of the youth ministry. These shoes mark, almost to the day, the turning point towards what 
+        God had for me at Elevation Church. -Tim Somers`,
+        shoeImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-7.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-8.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/ythx-9.jpg`],
+        galImages: [`https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-1.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-2.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-3.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-4.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-5.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-6.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-7.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-8.jpg,
+        https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/timStory-9.jpg`],
+    }, 
 
 ];
 db.Secret.deleteMany({})
