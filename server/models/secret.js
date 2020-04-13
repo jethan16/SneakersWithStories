@@ -15,9 +15,7 @@ const SecretSchema = new Schema({
     },
     silhouette: String,
     shoeImages: [String],
-    galImages: {
-        type: Array
-    },
+    galImages: [String],
     pullQuote: {
         type: String,
         trim: true,

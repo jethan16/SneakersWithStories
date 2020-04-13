@@ -1,18 +1,20 @@
 .vision-upper {
   display: flex;
   flex-direction: column;
+  /* border: solid red 1px; */
 }
 
 .vision-lower {
   display: flex;
   flex-direction: column;
+  /* border: solid red 1px; */
 }
 
 .vision-lower-content {
   width: 91.65%;
-  height: 40vh;
+  /* height: 40vh; */
   color: black;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   font-size: 15px;
   margin: 0 auto;
@@ -21,8 +23,8 @@
 }
 
 .lower-splash {
-  height: 100px;
-  width: 50%;
+  height: 400px;
+  width: 100%;
   background-image: url(../../images/BioHeadshot.jpg);
   background-position: center;
   background-size: cover;
@@ -43,7 +45,7 @@
 
 .vision-content {
   width: 91.65%;
-  height: 40vh;
+  /* height: 40vh; */
   /* background-color: rgb(204, 203, 203); */
   color: black;
   font-weight: 500;
@@ -73,14 +75,23 @@
 
   .vision-lower {
     flex-direction: row-reverse;
+    align-items: center;
     margin-bottom: 20px;
     width: 91.6%;
     margin: 0 auto;
+    border-top: solid 1px lightgrey;
+    justify-content: center;
+  }
+
+  .lower-splash {
+    height: 200px;
+    width: 30%;
   }
 
   .vision-content {
     font-size: 25px;
     line-height: 1.2em;
+    font-weight: 400;
     /* height: 50vh; */
     /* clear: right; */
   }
@@ -108,20 +119,17 @@
   } */
 
   .vision-lower-content {
-    width: 50%;
+    width: 100%;
     margin-right: 20px;
     font-size: 18px;
-  }
-
-  .lower-splash {
-    width: 50%;
-    background-position: center;
-    background-size: cover;
+    padding-left:0 ;
   }
 
   .vision-lower {
     margin-bottom: 20px;
-    align-items: center;
+    padding:0 10px;
+
+    /* align-items: center; */
   }
 
   .vision-middle {
@@ -136,20 +144,36 @@
   }
 
   .vision-quote {
-    width: 35%;
+    width: 45%;
     font-size: 45px;
   }
 
   .vision-content {
     /* height: 70vh; */
-    font-size: 35px;
+    font-size: 40px;
+    line-height: 1.12em;
+    font-weight: 300;
+  }
+
+  .vision-lower {
+    padding: 20px;
+  }
+
+  .vision-lower-content {
+    font-size: 25px;
+    /* padding: 10px; */
   }
 
   .upper-splash {
-    height: 50vh;
+    height: 45vh;
   }
 
   .lower-splash {
-    height: 750px;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
   }
 }
