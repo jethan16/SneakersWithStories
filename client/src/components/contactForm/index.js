@@ -56,7 +56,9 @@ class Contact extends React.Component {
                         onChange={e => this.change(e)}
                     />
                     <br />
-                    <button className="save-btn" onClick={e => this.onSubmit(e)}>Submit</button>
+                    <button className="save-btn" onClick={e => this.onSubmit(e)}>
+                        Submit
+                    </button>
                 </fieldset>
             </form>
         )
