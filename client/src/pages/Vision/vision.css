@@ -23,8 +23,9 @@
 
 .lower-splash {
   /* border: solid 2px red;  */
-  height: 241px;
-  background-image: url(../../images/Daniel_profile.jpg);
+  /* width: 100%; */
+  height: 400px;
+  background-image: url(../../images/BioHeadshot.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -101,10 +102,10 @@
   }
 
   .lower-splash {
-    height: 295px;
+    /* height: 295px; */
     width: 50%;
     /* border: solid 2px red; */
-    background-image: url(../../images/Daniel_profile.jpg);
+    /* background-image: url(../../images/BioHeadshot.jpg); */
     background-position: center;
     background-size: cover;
   }
@@ -131,6 +132,6 @@
   }
 
   .lower-splash {
-    height: 523px;
+    height: 750px;
   }
 }

@@ -11,6 +11,7 @@ function Footer() {
       <div className="footer-box contact">
         <h1>Contact Us</h1>
         <i className="footer-icon fas fa-bullhorn"></i>
+
       </div>
       <div className="footer-box connect">
         <h1>Keep In Touch</h1>
@@ -20,10 +21,12 @@ function Footer() {
       </div>
         <div className="footer-box submit-story">
           <h1>Tell Your Story</h1>
+
       <Link to="/stories">
           <i class="footer-icon far fa-comments"></i>
       </Link>
         </div>
+
     </footer>
   );
 }

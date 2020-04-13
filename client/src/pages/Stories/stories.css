@@ -1,332 +1,207 @@
-.story-banner {
-  width: 100%;
-  height: 3vh;
-  margin: 15px 0;
+.fa-quote-left,
+.fa-quote-right {
+  color: #77c043;
+}
+
+.fa-quote-right {
+  margin-left: auto;
+}
+
+.fa-chevron-left, .fa-chevron-right {
   font-size: 25px;
+  color: grey;
+}
+
+.title-bar {
+  margin: 20px 0;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 800;
 }
 
-.story-overview {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  /* padding-top: 0px; */
-}
-
-.fa-quote-left,
-.fa-quote-right {
-  font-size: 35px;
-  color: rgb(167, 167, 167);
-}
-
-.fa-quote-right {
-  align-self: flex-end;
-}
-
-/* .pull-quote {
-  font-size: 30px;
-  text-align: start;
-  line-height: 0.9em;
-  margin: 8px;
-  font-weight: 800;
-} */
-
-.stories-carousel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-.story-splash {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.shoe-specs {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-  justify-content: space-evenly;
-}
-
-.story-splash img {
-  width: 100%;
+.story-banner {
+  width: 85%;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .pull-quote {
-  text-align: start;
-  line-height: 0.85em;
-  padding: 10px 15px;
-  margin: 0;
-  margin-left: 10px;
-  font-size: 35px;
-  text-align: start;
-  font-weight: 800;
-}
-
-.gallery-container {
+  /* border: solid 1px black; */
   width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
+  color: black;
+  font-size: 3.75vh;
+  line-height: 1em;
+  font-weight: 700;
+  float: right;
+  padding: 20px;
+  margin-top: 0;
 }
 
-.gal-image {
-  width: 33.33%;
-  /* margin: 2px; */
-  /* border: solid 1px rgba(63, 63, 63, 0.733); */
-  object-fit: cover;
+.pull-quote p {
+  margin-left: 20px;
 }
 
-.gal-image img {
-  object-fit: fill;
+.story-summary {
+  padding: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 4.2vw;
+}
+
+.shoe-specs {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 20px;
+}
+
+.shoe-specs * {
+  color: white;
+}
+
+.shoe-specs h1 {
+  font-size: 35px;
 }
 
 .specs-title {
   text-align: center;
   background-color: #77c043;
-  color: white;
-  padding: 80px 40px;
-  line-height: 1.9em;
-  width: 100%;
-}
-
-.specs-title h1 {
-  font-size: 45px;
-  font-weight: 800;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .specs-title li {
-  font-size: 19px;
-  font-weight: 500;
+  text-align: center;
+  font-weight: 600;
 }
 
 .features {
-  padding: 35px 65px;
-  line-height: 1.45em;
-  text-align: start;
-  color: white;
-  background-color: rgb(160, 160, 160);
-  width: 100%;
-}
-
-.features h1 {
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.features li {
-  font-size: 15px;
+  text-align: center;
+  background-color: gray;
   list-style-type: disc;
-  margin-left: 18px;
-  width: 100%;
+  list-style-position: inside;
+  padding: 20px;
 }
 
-.story-summary {
-  text-align: start;
-  font-size: 15px;
-  margin-top: 10px;
-  /* padding: 20px; */
-}
 
-.button-bar {
-  position: relative;
-  bottom: 0;
+.gallery-container {
   display: flex;
-  justify-content: space-between;
-  padding: 0 15px 10px 15px;
+  flex-wrap: wrap;
 }
 
-.story-button {
-  width: 28%;
-  color: white;
-  background-color: black;
+.gal-image {
+  width: 33.33%;
+  object-fit: cover;
+  /* border: solid 1px black; */
 }
 
-.next-button {
-  float: right;
-}
+
 
 @media only screen and (min-width: 1024px) {
+
   .story-banner {
     font-size: 35px;
-    margin: 25px 0;
-  }
-
-  .stories-middle {
-    margin-top: 20px;
-    width: 100%;
-    flex-direction: row-reverse;
+    width: 70%;
     /* border: solid 1px black; */
-    height: 35vh;
-  }
-
-  .story-splash {
-    flex-direction: row;
-    height: 468px;
-    margin-bottom: 20px;
-    /* bordeR: solid 1px black; */
   }
 
   .carousel-container {
-    width: 50%;
-    /* overflow: hidden; */
-  }
-
-  .carousel-container div {
-    object-fit: contain;
-    width: 100%;
-  }
-
-  .story-overview {
-    margin: 0;
-    width: 50%;
-    /* padding: 0; */
-  }
-
-  .shoe-specs {
-    justify-content: flex-start;
-    margin: 0;
-    width: 50%;
-    /* float: right; */
-  }
-
-  .stories-middle {
-    display: flex;
-    /* justify-content: space-between; */
-    /* border-bottom: 1px black solid; */
-  }
-
-  .features {
-    padding: 23px 65px;
-    padding-left: 100px;
-    width: 96%;
-  }
-
-  .features h1 {
-    font-size: 20px;
-  }
-
-  .features li {
-    font-size: 15px;
-  }
-
-  .gallery-container {
-    /* position: absolute; */
-    width: 50%;
-    margin: 0;
-    /* margin-left: 25px; */
-    /* float: left; */
-    /* padding: 40px 0; */
-  }
-
-  .story-summary {
-    width: 100%;
-    font-size: 17px;
-    line-height: 1.2em;
-    /* padding: 10px; */
-    padding-right: 50px;
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-
-  .specs-title {
-    padding: 50px 30px;
-    width: 96%;
-  }
-
-  .button-bar {
-    padding: 40px 25px 10px 25px;
-  }
-
-  .story-button {
-    padding: 20px 0;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 1408px) {
-  .story-overview {
-    padding: 20px 25px;
-    /* border: solid 2px red; */
-  }
-
-  .story-splash {
-    flex-direction: row;
-    height: 66.75vh;
-    /* border: solid red 2px; */
-  }
-
-  .carousel-container {
-    width: 50%;
-    object-fit: contain;
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+    /* border: solid 1px black; */
   }
 
   .story-img {
-    width: 50%;
-    height: 692px;
-    object-fit: cover;
-  }
-
-  .carousel-container div {
     width: 100%;
-  }
-
-  .carousel-container {
-    height: 696px;
-    /* border: solid 2px red; */
+    object-fit: cover;
+    /* border: solid 1px black; */
   }
 
   .pull-quote {
-    font-size: 70px;
-    margin: 0;
-    padding: 0 18px;
+    /* border: solid 1px black; */
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 3.25vw;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .story-summary {
+    font-size: 18px;
+    line-height: 1.25em;
+    text-align: start;
+    padding: 0px;
+  }
+
+  .pull-quote p {
+    margin-left: 45px;
+  }
+
+  .stories-lower {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 0;
+  }
+
+  .gallery-container {
+    width: 75%;
+  }
+  
+  .shoe-specs {
+    padding: 0;
+    padding-left: 20px;
+    /* width: 40%; */
+    /* flex-direction: row-reverse; */
+  }
+
+  .features, .specs-title {
+    /* width: 50%; */
+  }
+
+  .specs-title {
+    padding: 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1408px) {
+  .story-banner {
+    font-size: 45px;
   }
 
   .story-summary {
     font-size: 23px;
   }
 
-  .stories-middle {
-    margin-top: 0px;
-    width: 100%;
-    height: 56vh;
-    /* border: solid 2px red; */
-  }
-
-  .specs-title {
-    padding: 115px 30px;
-    width: 96.5%;
+  .shoe-specs {
+    width: 50%;
   }
 
   .features {
-    padding: 85px 150px;
-    padding-left: 275px;
-    width: 96.5%;
+    padding: 75px;
   }
 
-  .features h1 {
-    font-size: 25px;
-    margin-bottom: 5px;
+  .stories-lower {
+    margin-top: 20px;
   }
 
-  .features li {
-    font-size: 18px;
-    margin: 0;
+  .specs-title {
+    padding: 110px;
   }
 
-  .story-button:hover {
-    background-color: black;
-    color: white;
-  }
-
-  .gal-image {
-    /* border: solid red 2px; */
-    width: 33.33%;
+  .gallery-container {
+    width: 50%;
   }
 }
