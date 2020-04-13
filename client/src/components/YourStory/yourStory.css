@@ -19,6 +19,8 @@
     width: 91.5%;
     margin: 0 auto;
     height: 45vh;
+    background-image: url(../../images/splashes/Shoe_Lockup_01.png), url(../../images/splashes/TellUsYourStory_BG_01.jpg), url(../../images/splashes/TellUsYourStory_BG_02.png);
+    background-size: contain, cover;
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./storyBody.css";
-import Panthers1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
+// import Panthers1 from "../../images/shoes/2_Panthers/Panthers_1.jpg";
 // import blockQuotes from "../../images/icons/block-quotes.png";
 
 function StoryBody(props) {
