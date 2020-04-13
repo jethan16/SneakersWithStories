@@ -29,9 +29,9 @@ function Modal(props) {
             </div>
           </div>
           <div className="modal-gallery">
-            <div className="modal-image one"></div>
-            <div className="modal-image two"></div>
-            <div className="modal-image three"></div>
+            <div className="search-modal-image one"></div>
+            <div className="search-modal-image two"></div>
+            <div className="search-modal-image three"></div>
           </div>
         </div>
       </div>

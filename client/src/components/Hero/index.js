@@ -12,7 +12,7 @@ function Hero() {
     <section className="hero">
       <img className='hero-splash' src={heroSplash} alt="splash" />
       <div className='hero-text'>
-        <h1>Some stories require laces, not words.</h1>
+        <h1>Some stories are best told with laces, not words.</h1>
         <Link to="/vision">
         <h5>
         Let us tell you more about it {<img className='chevron-right'src={chevronRight} width='16' height='16'/>}
