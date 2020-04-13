@@ -1,15 +1,12 @@
 import axios from 'axios';
-
 export default {
   Users: {
     login: function (email, password) {
       return axios.post('/api/users/login', { email, password });
     },
-
     create: function (email, password) {
       return axios.post('/api/users', { email, password });
     },
-
     getMe: function (authToken) {
       return axios.get('/api/users/me', {
         headers: {
@@ -18,14 +15,9 @@ export default {
       });
     }
   },
-
-  Secrets: {
-    getAll: function (authToken) {
-      return axios.get('/api/secrets', {
-        headers: {
-          'Authorization': `Bearer ${authToken}`
-        }
-      });
+  Stories: {
+    getAll: function () {
+      return axios.get('/api/stories');
     }
   }
 }

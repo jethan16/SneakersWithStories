@@ -9,6 +9,7 @@ import Login from "../../pages/Login/Login";
 import Secret from "../../pages/Secret/Secret";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Stories from "../../pages/Stories";
+import API from "../../lib/API"
 
 import Shop from "../../pages/Shop";
 import Vision from "../../pages/Vision";
