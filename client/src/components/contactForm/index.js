@@ -17,6 +17,7 @@ class Contact extends React.Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+        
         console.log(this.state);
     };
 
