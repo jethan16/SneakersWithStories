@@ -1,0 +1,87 @@
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image {
+    /* background-color: #77c043; */
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 0px; */
+}
+
+.shop-img1 {
+    background-image: url("https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/Hoodie.png");
+}
+
+.shop-img2 {
+    background-image: url("https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/LS_TShirt.png");
+    
+}
+
+.shop-img3 {
+    background-image: url("https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/TShirt.png");
+    margin: 0;
+}
+
+.shop-img4 {
+    background-image: url("https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/Stickers.png");
+}
+
+.img {
+    /* border-radius: 2px; */
+    object-fit: cover;
+    background-size: 336px;
+    background-repeat: no-repeat;
+    height: 336px;
+    width: 269px;
+    background-position: center;
+}
+
+.image h3 {
+    text-align: left;
+    color: black;
+    /* margin-bottom: 3px; */
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.image #icon-cart {
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.addToCart {
+    position: absolute;
+    width: 60%;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    margin-left: 95px;
+    border-radius: 2px;
+}
+
+.addToCart:hover {
+    background-color: black;
+    color: #ffffff;
+}
+
+.image:hover .cart1, 
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+    bottom: 56px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
