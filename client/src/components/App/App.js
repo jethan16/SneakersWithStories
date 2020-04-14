@@ -17,6 +17,7 @@ import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
 
 
+
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
 function App() {
@@ -66,6 +67,7 @@ function App() {
     }
   });
   useEffect(() => {
+    document.title = 'SNKRS with Stories'
     const { authToken } = authState;
     if (!authToken) return;
     API.Users.getMe(authToken)
