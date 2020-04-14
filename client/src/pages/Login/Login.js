@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import API from '../../lib/API';
 import AuthContext from '../../contexts/AuthContext';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import "./style.css"
 
 class Login extends Component {
   static contextType = AuthContext;

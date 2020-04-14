@@ -1,0 +1,15 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body {
+    width: 93vw;
+    /* display: flex; */
+}
+
+.form-control {
+    margin: 20px auto;
+}
