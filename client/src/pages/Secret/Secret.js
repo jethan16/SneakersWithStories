@@ -9,7 +9,6 @@ import "./style.css"
 
 class Story extends Component {
   static contextType = AuthContext;
-
   state = {
     title: "",
     name: "",
@@ -61,7 +60,6 @@ class Story extends Component {
   //   })
   //   .finally(() => this.setState({ isLoading: false }));
   // }
-
 
   render() {
     return (
