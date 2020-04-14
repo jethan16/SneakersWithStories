@@ -29,9 +29,9 @@ const SecretSchema = new Schema({
     }
 })
 
-let Secret = mongoose.model('Secret', SecretSchema)
+let Stories = mongoose.model('Secret', SecretSchema)
 
-module.exports = Secret
+module.exports = Stories;
 
 
 
