@@ -16,18 +16,10 @@ class Contact extends React.Component {
     });
   };
 
-<<<<<<< HEAD
-    onSubmit = (e) => {
-        e.preventDefault();
-        
-        console.log(this.state);
-    };
-=======
   onSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
   };
->>>>>>> 28f94aaeeba2af6c13f4fccde9b05fa5ebc3b44f
 
   render() {
     return (
