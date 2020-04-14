@@ -11,7 +11,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Stories from "../../pages/Stories";
 import API from "../../lib/API"
 
-import Shop from "../../pages/Shop";
+import Shop from "../../Shop";
 import Vision from "../../pages/Vision";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
