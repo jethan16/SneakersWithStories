@@ -134,6 +134,11 @@
     /* border: solid 1px black; */
   }
 
+  .story-section {
+    height: 74vh;
+    /* border: solid 1px red; */
+  }
+
   .carousel-container {
     width: 45%;
     float: right;
@@ -213,6 +218,10 @@
 @media only screen and (min-width: 1408px) {
   .story-banner {
     font-size: 45px;
+  }
+
+  .story-section {
+    height: 78vh;
   }
 
   .story-summary {

@@ -3,7 +3,8 @@ const nodemailer = require('nodemailer');
 
 const db = require('../../models')
 
-const { JWTVerifier } = require('../../lib/passport');
+
+// const { JWTVerifier } = require('../../lib/passport');
 
 storiesController.get('/create/', (req, res) => {
   console.log('creating ')
@@ -13,13 +14,15 @@ storiesController.get('/create/', (req, res) => {
     .catch(err => res.json(err));
 });
 
-storiesController.get('/', JWTVerifier, (req, res) => {
+storiesController.get('/',(req, res) => {
 
   db.Stories.find({})
     .then(results => {
+      console.log(results)
       res.json(results);
     })
     .catch(error => {
+      console.log(error)
       if (error) throw error
     })
 })

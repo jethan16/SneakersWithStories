@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+header {
+  /* background-color: #77c043; */
+  background-image: url('https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/TellUsYourStory_BG_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 223px;
+  position: relative;
+  margin-right: 71px;
+  margin-left: 71px;
+}
+
+/* .overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(10, 10, 10, 0.3);
+} */
+
+nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav li {
+  margin-top: 50px;
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav h2 {
+  color: #aafd668a;
+  font-size: 80px;
+  font-weight: 700;
+  align-items: center;
+  /* text-shadow: 1px 1px rgba(144, 144, 144, 0.719); */
+  align-self: end;
+}
+
+li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+li a:hover {
+  color: #77c043;
+}
+
+.cart i {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: #ffffff;
+  color: #494949;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cart a:hover {
+  color: #77c043;
+}
+
+@media(max-width: 500px) {
+  nav h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+}

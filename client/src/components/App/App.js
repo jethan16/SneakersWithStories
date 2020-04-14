@@ -9,12 +9,14 @@ import Login from "../../pages/Login/Login";
 import Secret from "../../pages/Secret/Secret";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Stories from "../../pages/Stories";
+import API from "../../lib/API"
 
-import Shop from "../../pages/Shop";
+import Shop from "../../Shop";
 import Vision from "../../pages/Vision";
 import Form from "../../components/storiesForm";
 import Contact from "../../components/contactForm";
-import API from "../../lib/API"
+
+
 
 import snkrsBanner from "../../images/logos/SwS_Logo_Full.png";
 import "./App.css";
@@ -65,6 +67,7 @@ function App() {
     }
   });
   useEffect(() => {
+    document.title = 'SNKRS with Stories'
     const { authToken } = authState;
     if (!authToken) return;
     API.Users.getMe(authToken)

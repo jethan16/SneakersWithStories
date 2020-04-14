@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "node server",
-    "start:dev": "nodemon"
+    "start:dev": "nodemon",
+    "seed": "node seeders/seed.js"
   }
 }
