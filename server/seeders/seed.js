@@ -2,7 +2,7 @@ let mongoose = require("mongoose");
 let db = require("../models");
 
 
-mongoose.connect("mongodb://localhost/ProjectThree" || process.env.MONGODB_URI, {
+mongoose.connect( process.env.MONGODB_URI || "mongodb://localhost/ProjectThree", {
 
   useNewUrlParser: true,
   useFindAndModify: false,
