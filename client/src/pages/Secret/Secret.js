@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 //import { Redirect } from 'react-router-dom';
+
 import API from "../../lib/API";
 import AuthContext from "../../contexts/AuthContext";
 import "./style.css"
  
+
 class Story extends Component {
   static contextType = AuthContext;
   state = {
@@ -17,10 +19,12 @@ class Story extends Component {
     highlights: [],
     storySummary: "",
   };
+
   // handleChange = event => {
   //   this.setState({ name: event.target.value })
   //   console.log(event.target.value);
   // }
+
   handleSubmit = (event) => {
     event.preventDefault();
     const newStory = {
@@ -43,6 +47,7 @@ class Story extends Component {
     
   };
   // componentDidMount() {
+
   // API.Secrets.getAll(this.context.authToken)
   //   .then(response => response.data)
   //   .then(secrets => this.setState({ secrets }))
@@ -50,10 +55,12 @@ class Story extends Component {
   //     if (err.response.status === 401) {
   //       return this.setState({ error: "Unauthorized. Please login." });
   //     }
+
   //     console.log(err);
   //   })
   //   .finally(() => this.setState({ isLoading: false }));
   // }
+
   render() {
     return (
       
@@ -159,4 +166,5 @@ class Story extends Component {
     );
   }
 }
+
 export default Story;
