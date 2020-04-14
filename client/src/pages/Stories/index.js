@@ -186,6 +186,8 @@ function Stories() {
   }
   //
   return (
+    <div>
+      {stories.length > 0 ? (
         <StoriesWrapper>
           <div className="title-bar">
             <div onClick={getLastStory}>
@@ -253,7 +255,9 @@ function Stories() {
             </Modal>
           </div>
           <Footer />
-        </StoriesWrapper>     
+        </StoriesWrapper>
+      ) : null}
+    </div>
   );
 }
 
