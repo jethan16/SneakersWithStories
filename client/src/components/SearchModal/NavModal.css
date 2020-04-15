@@ -20,7 +20,7 @@
   .search-window {
     display: inline;
     position: absolute;
-    top: 95px;
+    top: 100px;
     width: 100vw;
     z-index: 10;
     overflow-y: hidden;

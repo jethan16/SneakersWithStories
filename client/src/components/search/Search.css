@@ -54,8 +54,16 @@
 
   .search-bar {
     background-color: black;
-    height: 100%;
+    height: 55px;
     color: white;
   }
 
+}
+
+@media only screen and (min-width: 1408px) {
+  .search-bar {
+    /* background-color: black; */
+    height: 60px;
+    /* color: white; */
+  }
 }
