@@ -6,7 +6,7 @@ const db = require('../../models')
 
 // const { JWTVerifier } = require('../../lib/passport');
 
-storiesController.get('/create/', (req, res) => {
+storiesController.get('/create', (req, res) => {
   console.log('creating ')
 
   db.Stories.create({})
