@@ -1,0 +1,19 @@
+.add-story-form {
+    width: 50%;
+    margin: 2% 25%;
+}
+
+.add-story-form input {
+    display: block;
+    width: 100%;
+}
+
+.add-story-form input, .add-story-form textarea {
+    font-size: 1.25em;
+}
+
+.add-story-form button {
+    background-color: lightblue;
+    padding: 1rem 2rem;
+    font-size: 1em;
+}
