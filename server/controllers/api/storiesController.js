@@ -6,7 +6,7 @@ const db = require('../../models')
 
 // const { JWTVerifier } = require('../../lib/passport');
 
-storiesController.get('/create', (req, res) => {
+storiesController.get('/create/', (req, res) => {
   console.log('creating ')
 
   db.Stories.create({})
@@ -31,8 +31,8 @@ storiesController.post('/email', (req, res) => {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'nathan.gianelli98@gmail.com',
-      pass: '347*98Ng'
+      user: '',
+      pass: ''
     }
   });
   
