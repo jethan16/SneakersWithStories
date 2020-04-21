@@ -9,12 +9,12 @@
 .nav-bar {
   position: absolute;
   width: 100vw;
-  height: 30vh;
+  /* height: 30vh; */
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 50px;
+  padding: 50px 0;
   background-color: white;
   z-index: 10;
   border-top: solid 1px black;
@@ -68,15 +68,16 @@
   .nav-bar {
     position: static;
     width: 91.6vw;
-    height: 50px;
-    margin: 0px auto;
+    /* height: 100px; */
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding-top: 0px;
+    padding: 0px;
     background-color: white;
     z-index: 10;
     border: none;
+    /* border: solid 1px black; */
   }
 
   .logo {

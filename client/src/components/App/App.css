@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   background-color: #e5e5e5;
-  height: 5vh;
+  height: 7vh;
 }
 
 .banner-link {
@@ -61,7 +61,7 @@
     display: flex;
     justify-content: center;
     background-color: #e5e5e5;
-    /* height: 5vh; */
+    height: 5vh;
   }
 
   .banner-link {

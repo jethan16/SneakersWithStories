@@ -1,49 +1,66 @@
-import React, { Component } from 'react';
-//import { Redirect } from 'react-router-dom';
+import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
-import API from '../../lib/API';
-import AuthContext from '../../contexts/AuthContext';
+import API from "../../lib/API";
+import AuthContext from "../../contexts/AuthContext";
+import StoryForm from "../../components/StoryForm/StoryForm";
 
-class Secret extends Component {
-  static contextType = AuthContext;
+class NewStory extends Component {
+  // static contextType = AuthContext;
 
   state = {
-    isLoading: true,
-    error: ""
-  }
+    redirectToReferrer: false,
+    error: "",
+  };
 
-  componentDidMount() {
-    API.Secrets.getAll(this.context.authToken)
-      .then(response => response.data)
-      .then(secrets => this.setState({ secrets }))
-      .catch(err => {
-        if (err.response.status === 401) {
-          return this.setState({ error: "Unauthorized. Please login." });
-        }
-
-        console.log(err);
+  handleSubmit = (
+    title,
+    name,
+    silhouette,
+    shoes,
+    gallery,
+    quote,
+    highlights,
+    summary
+  ) => {
+    API.Stories.create(
+      title,
+      name,
+      silhouette,
+      shoes,
+      gallery,
+      quote,
+      highlights,
+      summary
+    )
+      .then((response) => {
+        this.setState({ redirectToReferrer: true });
       })
-      .finally(() => this.setState({ isLoading: false }));
-  }
+      .catch((err) => {
+        if (err.response.status === 401) {
+          this.setState({
+            error:
+              "ERROR: An error has occured and your story could not be submitted at this time",
+          });
+        }
+        if (err.response.status === 404) {
+          console.log(err);
+        }
+      });
+  };
 
   render() {
-    return (
-      <div className='Secret'>
-        <div className='row'>
-          <div className='col'>
-            {this.state.isLoading
-              ? <div className='alert alert-success'>Loading...</div>
-              : this.state.error
-                ? <div className='alert alert-danger'>{this.state.error}</div>
-                : <div>
-                  <p>Shh, the secret is...</p>
-                  <p><em>{this.state.secrets[0].message}</em></p>
-                </div>}
-          </div>
-        </div>
-      </div>
-    );
+    const { from } = this.props.location.state || {
+      from: { pathname: "/secret" },
+    };
+    const { redirectToReferrer } = this.state;
+
+    if (redirectToReferrer) {
+      return <Redirect to={from} />;
+    }
+
+    return <StoryForm onSubmit={this.handleSubmit} />;
   }
 }
 
-export default Secret;
+export default NewStory;

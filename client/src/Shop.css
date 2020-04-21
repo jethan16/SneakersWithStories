@@ -92,10 +92,51 @@ li a:hover {
   color: #77c043;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 1023px) {
+  header {
+    background-image: url('https://sneakers-with-stories.s3.us-east-2.amazonaws.com/web-opt/TellUsYourStory_BG_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 223px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+}
+
+@media(max-width: 538px) {
+
+  header {
+    height: 300px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
   nav h2 {
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+
+  nav li {
+    margin-top: 90px;
+  }
+}
+
+@media(max-width: 538px) {
+
+  nav h2 {
+      font-size: 50px;
       width: 100%;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
+      margin-top: 40px;
+  }
+
+  nav li {
+    margin-top: 10px;
   }
 }
